@@ -13,7 +13,7 @@ import Contact from "./components/Contact";
 import Career from "./components/Career";
 export default function Home() {
   return (
-    <div>
+    <>
       <Hero />
       <KeyMessage />
       <Challenges />
@@ -27,6 +27,6 @@ export default function Home() {
       <TheNextStep />
       <Contact />
       <Career />
-    </div>
+    </>
   );
 }
