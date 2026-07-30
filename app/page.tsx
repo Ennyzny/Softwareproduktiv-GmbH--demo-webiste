@@ -9,8 +9,7 @@ import Funding from "./components/Funding";
 import Effects from "./components/Effects";
 import OurPrinciple from "./components/OurPrinciple";
 import TheNextStep from "./components/TheNextStep";
-import Contact from "./components/Contact";
-import Career from "./components/Career";
+
 export default function Home() {
   return (
     <>
@@ -25,8 +24,6 @@ export default function Home() {
       <Effects />
       <OurPrinciple />
       <TheNextStep />
-      <Contact />
-      <Career />
     </>
   );
 }

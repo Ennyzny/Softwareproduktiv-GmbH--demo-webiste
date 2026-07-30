@@ -1,8 +1,8 @@
 export default function Effects() {
   return (
     <>
-      <section>
-        <div>Effects</div>
+      <section className="px-6 md:px-12 py-20 md:py-40 border-t border-white/10">
+        <div>// Effekte</div>
       </section>
     </>
   );

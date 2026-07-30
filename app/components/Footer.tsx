@@ -1,86 +1,143 @@
 export default function Footer() {
   return (
-    <footer>
-      <div className="wrap">
-        <div className="fgrid grid">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div>
-            <h4 className="uppercase">
-              <span className="vertical-align inherit">
-                <span className="vertical-align inherit">
-                  <b>Direct Contact</b>
-                </span>
-              </span>
-            </h4>
-            <p className="fcompany">
-              <b>
-                <span className="vertical-align inherit">
-                  <span className="vertical-align inherit">
-                    softwareproduktiv Gmbh
-                  </span>
-                </span>
-              </b>
-              <br></br>
-              <span className="vertical-align inherit">
-                <span className="vertical-align inherit">
-                  Konrad-Zuse-Straße 4
-                </span>
-              </span>
-              <br></br>
-              <span className="vertical-align inherit">
-                <span className="vertical-align inherit">46397 Bocholt</span>
-              </span>
-              <br></br>
-              <br></br>
-              <span className="vertical-align inherit">
-                <span className="vertical-align inherit">
-                  Tel. 02871 234 35-0
-                </span>
-              </span>
-              <br></br>
-              <a href="mailto:support@softwareproduktiv.de">
-                <span className="vertical-align inherit">
-                  <span className="vertical-align inherit">
+    <>
+      <footer className="bg-[#2e1a47] text-white">
+        <div className="mx-auto max-w-7xl px-12 py-24">
+          <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr_1fr_0.9fr]">
+            <div>
+              <h2 className="text-2xl font-bold tracking-tight">
+                <span className="text-gray-400">SOFTWARE</span>
+                {""}
+                <span>PRODUKTIV</span>
+              </h2>
+              <p className="mt-10 max-w-sm leading-5 text-gray-400 text-xs">
+                Wir sind der spezialisierte Software-Partner für
+                Handwerksbetriebe. Wir programmieren digitale Systeme, die die
+                administrative Belastung minimieren, Fehler eliminieren und den
+                Profit sichern.
+              </p>
+            </div>
+            <div>
+              <h3 className="mb-8 font-bold uppercase tracking-[0.3em] text-xs">
+                Schnelleinstieg
+              </h3>
+              <div className="space-y-4 text-xs text-gray-400">
+                <a
+                  href="#kernbotschaft"
+                  className="block transition hover:text-white"
+                >
+                  // Kernbotschaft
+                </a>
+                <a
+                  href="#herausforderungen"
+                  className="block transition hover:text-white"
+                >
+                  // Herausforderungen
+                </a>
+                <a href="#ansatz" className="block transition hover:text-white">
+                  // Unser Ansatz
+                </a>
+                <a
+                  href="#philosophie"
+                  className="block transition hover:text-white"
+                >
+                  // Philosophie
+                </a>
+                <a
+                  href="#eigenentwicklungen"
+                  className="block transition hover:text-white"
+                >
+                  // Eigenentwicklungen
+                </a>
+                <a
+                  href="#leistungen"
+                  className="block transition hover:text-white"
+                >
+                  // Leistungen
+                </a>
+              </div>
+            </div>
+            <div className="pt-12 lg:pt-16">
+              <div className="space-y-4 text-gray-400 text-xs">
+                <a
+                  href="#foerdermittel"
+                  className="block transition hover:text-white"
+                >
+                  // Fördermittel
+                </a>
+                <a
+                  href="#effekte"
+                  className="block transition hover:text-white"
+                >
+                  // Effekte
+                </a>
+                <a
+                  href="#grundsatz"
+                  className="block transition hover:text-white"
+                >
+                  // Unser Grundsatz
+                </a>
+                <a
+                  href="#naechster-schritt"
+                  className="block transition hover:text-white"
+                >
+                  // Der nächste Schritt
+                </a>
+                <a
+                  href="#kontakt"
+                  className="block transition hover:text-white"
+                >
+                  // Kontakt
+                </a>
+                <a
+                  href="#karriere"
+                  className="block transition hover:text-white"
+                >
+                  // Karriere
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3 className="mb-8 text-xs font-bold uppercase tracking-[0.3em]">
+                Direktkontakt
+              </h3>
+              <div className="space-y-5 text-gray-300 text-xs">
+                <div>
+                  <p className="font-semibold text-white">
+                    softwareproduktiv GmbH
+                  </p>
+                  <p className="leading-5">Konrad-Zuse-Straße 4</p>
+                  <p className="leading-5">46397 Bocholt</p>
+                </div>
+                <div className="leading-5 text-xs">
+                  <p>Tel. 02871 234 35-0</p>
+                  <a
+                    href="mailto:support@softwareproduktiv.de"
+                    className="hover:text-white"
+                  >
                     support@softwareproduktiv.de
-                  </span>
-                </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="my-12 h-px bg-white/10" />
+          <div className="flex gap-6 text-gray-400 lg:flex-row lg:items-center lg:justify-between text-xs">
+            <p>© 2026 Softwareproduktiv GmbH // Alle Rechte vorbehalten.</p>
+            <div className="flex flex-wrap gap-6 text-xs">
+              <a href="#" className="hover:text-white">
+                Impressum
               </a>
-            </p>
+              <a href="#" className="hover:text-white">
+                Datenschutz
+              </a>
+              <a href="#" className="hover:text-white">
+                AGB
+              </a>
+            </div>
           </div>
         </div>
-        <div className="fbottom flex">
-          <div>
-            <span className="vertical-align inherit">
-              <span className="vertical-align inherit">
-                © 2026 Softwareproduktiv GmbH // All rights reserved.
-              </span>
-            </span>
-          </div>
-          <div>
-            <a href="#">
-              <span className="vertical-align inherit">
-                <span className="vertical-align inherit">Legal notice</span>
-              </span>
-            </a>
-            <span> // </span>
-            <a href="#">
-              <span className="vertical-align inherit">
-                <span className="vertical-align inherit">Privacy policy</span>
-              </span>
-            </a>
-            <span> // </span>
-            <a href="#">
-              <span className="vertical-align inherit">
-                <span className="vetical-align inherit">
-                  Terms and conditions
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
