@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
     <>
-      <section className="px-6 md:px-12 py-20 md:py-40 border-t border-white/10">
-        <div></div>
+      <section className="relative h-screen min-h-160 flex flex-col items-center border overflow-hidden border-b border-solid">
+        <div className="text-black">Hero</div>
       </section>
     </>
   );

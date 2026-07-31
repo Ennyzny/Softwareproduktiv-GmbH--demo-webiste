@@ -1,7 +1,7 @@
 export default function Funding() {
   return (
     <>
-      <section className="px-6 md:px-12 py-20 md:py-40 border-t border-white/10 bg-[#f5f2f0]">
+      <section className="block isolate p-30 bg-[#f5f2f0]">
         <span className="text-black">// Fördermittel</span>
         <div className="bg-white mt-20">
           <div className="text-black flex">

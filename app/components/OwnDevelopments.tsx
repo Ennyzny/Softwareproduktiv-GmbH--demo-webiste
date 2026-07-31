@@ -1,7 +1,7 @@
 export default function OwnDevelopments() {
   return (
     <>
-      <section className="px-6 md:px-12 py-20 md:py-40 border-t border-white/10 bg-[#2b1b44]">
+      <section className="block relative overflow-hidden isolate p-30 bg-[#2b1b44] text-white">
         <div className="text-center">
           <span> // Eigenentwicklungenents</span>
           <h2>Eigene Lösungen. Keine Abhängigkeit von Standards.</h2>

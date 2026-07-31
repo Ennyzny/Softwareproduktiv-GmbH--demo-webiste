@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <>
-      <footer className="bg-[#2e1a47] text-white">
-        <div className="mx-auto max-w-7xl px-16 py-9">
+      <footer className="block isolate p-18.5 bg-[#2e1a47] text-white">
+        <div className="">
           <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr_1fr_0.9fr]">
             <div>
               <h2 className="text-2xl font-bold tracking-tight">

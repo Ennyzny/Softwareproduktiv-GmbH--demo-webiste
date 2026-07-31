@@ -1,6 +1,6 @@
 export default function KeyMessage() {
   return (
-    <section className="px-6 md:px-12 py-20 md:py-40 border-t border-white/10 bg-white">
+    <section className="block isolate p-30 bg-[#ffffff]">
       <div className="text-black gap-20 flex">
         <div className="">
           <span>// Kernbotschaft</span>

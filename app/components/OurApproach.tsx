@@ -1,7 +1,7 @@
 export default function OurApproach() {
   return (
     <>
-      <section className="px-6 md:px-12 py-20 md:py-40 border-t border-white/10 bg-white">
+      <section className="block isolate p-30 border border-t border-b border-solid bg-white">
         <div className="text-black">// Unser Ansatz </div>
       </section>
     </>

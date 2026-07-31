@@ -1,7 +1,7 @@
 export default function TheNextStep() {
   return (
     <>
-      <section className="px-6 md:px-12 py-20 md:py-40 border-t border-white/10 bg-white">
+      <section className="block isolate p-30 border-t border-solid bg-white">
         <div className="">
           <div className="text-center text-black">
             <span>// Der nächste Schritt</span>

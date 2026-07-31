@@ -4,8 +4,8 @@ import logo2 from "@/public/projectphotos/logo2.png";
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#f5f2f0] border-b border-gray-200">
-      <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-12">
+    <header className="sticky top-0 z-40 bg-[#f5f2f0] border-b border-gray-200">
+      <div className="flex items-center justify-between h-18 gap-5 max-w-310 mx-auto px-10 py-0">
         <a
           href="#top"
           className="flex items-center gap-4"
@@ -27,22 +27,22 @@ export default function Navbar() {
             className="object-contain"
           />
         </a>
-        <nav className="flex items-center gap-16">
+        <nav className="flex items-center gap-10">
           <a
             href="#karriere"
-            className="text-[18px] font-bold uppercase tracking-[0.18em] text-[#2E1B4D] transition hover:opacity-60"
+            className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#2E1B4D] transition-[0.2s] hover:text-purple-500"
           >
             Karriere
           </a>
           <a
             href="#leistungen"
-            className="text-[18px] font-bold uppercase tracking-[0.18em] text-[#2E1B4D] transition hover:opacity-60"
+            className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#2E1B4D] transition-[0.2s] hover:text-purple-500"
           >
             Leistungen
           </a>
           <a
             href="#kontakt"
-            className="text-[18px] font-bold uppercase tracking-[0.18em] text-[#2E1B4D] transition hover:opacity-60"
+            className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#2E1B4D] transition-[0.2s] hover:text-purple-500"
           >
             Anfrage
           </a>
