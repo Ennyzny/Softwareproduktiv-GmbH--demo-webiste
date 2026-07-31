@@ -4,7 +4,7 @@ import logo2 from "@/public/projectphotos/logo2.png";
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#F8F6F4] border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#f5f2f0] border-b border-gray-200">
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-12">
         <a
           href="#top"

@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       <footer className="bg-[#2e1a47] text-white">
-        <div className="mx-auto max-w-7xl px-12 py-24">
+        <div className="mx-auto max-w-7xl px-16 py-9">
           <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr_1fr_0.9fr]">
             <div>
               <h2 className="text-2xl font-bold tracking-tight">
@@ -18,40 +18,43 @@ export default function Footer() {
               </p>
             </div>
             <div>
-              <h3 className="mb-8 font-bold uppercase tracking-[0.3em] text-xs">
+              <h3 className="mb-8 font-bold tracking-[0.2em] uppercase text-xs">
                 Schnelleinstieg
               </h3>
               <div className="space-y-4 text-xs text-gray-400">
                 <a
                   href="#kernbotschaft"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Kernbotschaft
                 </a>
                 <a
                   href="#herausforderungen"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Herausforderungen
                 </a>
-                <a href="#ansatz" className="block transition hover:text-white">
+                <a
+                  href="#ansatz"
+                  className="block transition hover:text-purple-500"
+                >
                   // Unser Ansatz
                 </a>
                 <a
                   href="#philosophie"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Philosophie
                 </a>
                 <a
                   href="#eigenentwicklungen"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Eigenentwicklungen
                 </a>
                 <a
                   href="#leistungen"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Leistungen
                 </a>
@@ -61,44 +64,44 @@ export default function Footer() {
               <div className="space-y-4 text-gray-400 text-xs">
                 <a
                   href="#foerdermittel"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Fördermittel
                 </a>
                 <a
                   href="#effekte"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Effekte
                 </a>
                 <a
                   href="#grundsatz"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Unser Grundsatz
                 </a>
                 <a
                   href="#naechster-schritt"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Der nächste Schritt
                 </a>
                 <a
                   href="#kontakt"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Kontakt
                 </a>
                 <a
                   href="#karriere"
-                  className="block transition hover:text-white"
+                  className="block transition hover:text-purple-500"
                 >
                   // Karriere
                 </a>
               </div>
             </div>
             <div>
-              <h3 className="mb-8 text-xs font-bold uppercase tracking-[0.3em]">
+              <h3 className="mb-8 text-xs font-bold uppercase tracking-[0.2em]">
                 Direktkontakt
               </h3>
               <div className="space-y-5 text-gray-300 text-xs">
