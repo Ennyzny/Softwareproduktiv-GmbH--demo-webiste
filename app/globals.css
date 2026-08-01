@@ -22,6 +22,6 @@
 body {
   background: #f5f2f0;
   color: var(--foreground);
-  font-family: Barlow, system-ui, sans-serif;
+  font-family: "Barlow", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }

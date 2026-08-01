@@ -2,16 +2,16 @@ export default function TheNextStep() {
   return (
     <>
       <section className="block isolate p-30 border-t border-solid border-[#e5e7eb] bg-white">
-        <div className="block isolate items-center max-w-310 transform-none pr-10 pl-10 mr-auto ml-auto text-center">
-          <span className="text-[13px] font-bold tracking-[0.14em] uppercase inline-block mb-5 text-[#221c35]">
+        <div className="block isolate items-center max-w-310 transform-none pr-10 pl-10 mr-auto ml-auto text-center opacity-100">
+          <span className="text-[13px] font-bold tracking-[0.14em] uppercase inline-block mb-5 text-[#221c35] box-border">
             // Der nächste Schritt
           </span>
-          <h2 className="block font-medium mb-5.5 text-[#a7adb8]">
+          <h2 className="block font-medium mb-5.5 text-[#a7adb8] leading-[1.1] tracking-[-.01em]">
             Lass uns
             <b className="text-[#2e1a47]"> Dein System </b>
             anschauen.
           </h2>
-          <p className="block ml-4 mr-4 font-medium text-[17px] leading-[1.65] max-w-[51ch] text-[#75787b] ">
+          <p className="block isolate ml-8.5 mr-8.5 font-medium text-[17px] leading-[1.65] max-w-[60ch] text-[#75787b] border-box items-center">
             In einem unverbindlichen, 15-minütigen Gespräch analysieren wir
             deine aktuellen Datensilos und skizzieren eine konkrete Lösung.
           </p>

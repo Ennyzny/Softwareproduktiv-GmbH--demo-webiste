@@ -1,146 +1,169 @@
 export default function Footer() {
   return (
-    <>
-      <footer className="block isolate p-18.5 bg-[#2e1a47] text-white">
-        <div className="">
-          <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr_1fr_0.9fr]">
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight">
-                <span className="text-gray-400">SOFTWARE</span>
-                {""}
-                <span>PRODUKTIV</span>
-              </h2>
-              <p className="mt-10 max-w-sm leading-5 text-gray-400 text-xs">
-                Wir sind der spezialisierte Software-Partner für
-                Handwerksbetriebe. Wir programmieren digitale Systeme, die die
-                administrative Belastung minimieren, Fehler eliminieren und den
-                Profit sichern.
-              </p>
-            </div>
-            <div>
-              <h3 className="mb-8 font-bold tracking-[0.2em] uppercase text-xs">
-                Schnelleinstieg
-              </h3>
-              <div className="space-y-4 text-xs text-gray-400">
-                <a
-                  href="#kernbotschaft"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Kernbotschaft
-                </a>
-                <a
-                  href="#herausforderungen"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Herausforderungen
-                </a>
-                <a
-                  href="#ansatz"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Unser Ansatz
-                </a>
-                <a
-                  href="#philosophie"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Philosophie
-                </a>
-                <a
-                  href="#eigenentwicklungen"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Eigenentwicklungen
-                </a>
-                <a
-                  href="#leistungen"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Leistungen
-                </a>
-              </div>
-            </div>
-            <div className="pt-12 lg:pt-16">
-              <div className="space-y-4 text-gray-400 text-xs">
-                <a
-                  href="#foerdermittel"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Fördermittel
-                </a>
-                <a
-                  href="#effekte"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Effekte
-                </a>
-                <a
-                  href="#grundsatz"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Unser Grundsatz
-                </a>
-                <a
-                  href="#naechster-schritt"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Der nächste Schritt
-                </a>
-                <a
-                  href="#kontakt"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Kontakt
-                </a>
-                <a
-                  href="#karriere"
-                  className="block transition hover:text-purple-500"
-                >
-                  // Karriere
-                </a>
-              </div>
-            </div>
-            <div>
-              <h3 className="mb-8 text-xs font-bold uppercase tracking-[0.2em]">
-                Direktkontakt
-              </h3>
-              <div className="space-y-5 text-gray-300 text-xs">
-                <div>
-                  <p className="font-semibold text-white">
-                    softwareproduktiv GmbH
-                  </p>
-                  <p className="leading-5">Konrad-Zuse-Straße 4</p>
-                  <p className="leading-5">46397 Bocholt</p>
-                </div>
-                <div className="leading-5 text-xs">
-                  <p>Tel. 02871 234 35-0</p>
-                  <a
-                    href="mailto:support@softwareproduktiv.de"
-                    className="hover:text-white"
-                  >
-                    support@softwareproduktiv.de
-                  </a>
-                </div>
-              </div>
-            </div>
+    <footer className="bg-[#2E1A47] pt-18.5 pb-8.5 text-white leading-normal">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
+          <div>
+            <h2 className="mb-4 text-[20px] font-bold tracking-[0.02em]">
+              <span className="text-white/55">SOFTWARE</span>
+              <span className="text-white">PRODUKTIV</span>
+            </h2>
+
+            <p className="max-w-[40ch] text-[13px] leading-[1.7] text-white/55">
+              Wir sind der spezialisierte Software-Partner für
+              Handwerksbetriebe. Wir programmieren digitale Systeme, die die
+              administrative Belastung minimieren, Fehler eliminieren und den
+              Profit sichern.
+            </p>
           </div>
-          <div className="my-12 h-px bg-white/10" />
-          <div className="flex gap-6 text-gray-400 lg:flex-row lg:items-center lg:justify-between text-xs">
-            <p>© 2026 Softwareproduktiv GmbH // Alle Rechte vorbehalten.</p>
-            <div className="flex flex-wrap gap-6 text-xs">
-              <a href="#" className="hover:text-white">
-                Impressum
+
+          <div>
+            <h3 className="mb-4.5 text-[12px] font-bold uppercase tracking-[0.16em]">
+              Schnelleinstieg
+            </h3>
+
+            <nav className="space-y-2.25 text-[13px] text-white/60">
+              <a
+                href="#kernbotschaft"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Kernbotschaft
               </a>
-              <a href="#" className="hover:text-white">
-                Datenschutz
+
+              <a
+                href="#herausforderungen"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Herausforderungen
               </a>
-              <a href="#" className="hover:text-white">
-                AGB
+
+              <a
+                href="#ansatz"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Unser Ansatz
+              </a>
+
+              <a
+                href="#philosophie"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Philosophie
+              </a>
+
+              <a
+                href="#eigenentwicklungen"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Eigenentwicklungen
+              </a>
+
+              <a
+                href="#leistungen"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Leistungen
+              </a>
+            </nav>
+          </div>
+
+          <div>
+            <h3 className="mb-7.5 invisible text-[12px] font-bold uppercase">
+              Placeholder
+            </h3>
+
+            <nav className="space-y-2.25 text-[13px] text-white/60">
+              <a
+                href="#foerdermittel"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Fördermittel
+              </a>
+
+              <a
+                href="#effekte"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Effekte
+              </a>
+
+              <a
+                href="#grundsatz"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Unser Grundsatz
+              </a>
+
+              <a
+                href="#naechster-schritt"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Der nächste Schritt
+              </a>
+
+              <a
+                href="#kontakt"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Kontakt
+              </a>
+
+              <a
+                href="#karriere"
+                className="block transition-colors duration-200 hover:text-violet-400"
+              >
+                // Karriere
+              </a>
+            </nav>
+          </div>
+
+          <div>
+            <h3 className="mb-4.5 text-[12px] font-bold uppercase tracking-[0.16em]">
+              Direktkontakt
+            </h3>
+
+            <div className="text-[13px] leading-[1.85] text-white/70">
+              <p className="font-bold text-white">softwareproduktiv GmbH</p>
+
+              <p>Konrad-Zuse-Straße 4</p>
+              <p>46397 Bocholt</p>
+
+              <br />
+
+              <p>Tel. 02871 234 35-0</p>
+
+              <a
+                href="mailto:support@softwareproduktiv.de"
+                className="transition-colors hover:text-white"
+              >
+                support@softwareproduktiv.de
               </a>
             </div>
           </div>
         </div>
-      </footer>
-    </>
+
+        <div className="mt-13 pt-6.5 flex flex-wrap items-center justify-between gap-4 border-t border-white/14 text-[12px] text-white/50 box-border">
+          <p>© 2026 Softwareproduktiv GmbH // Alle Rechte vorbehalten.</p>
+
+          <div className="flex flex-wrap items-center">
+            <a href="#" className="transition-colors hover:text-white">
+              Impressum
+            </a>
+
+            <span className="mx-3">//</span>
+
+            <a href="#" className="transition-colors hover:text-white">
+              Datenschutz
+            </a>
+
+            <span className="mx-3">//</span>
+
+            <a href="#" className="transition-colors hover:text-white">
+              AGB
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }
