@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { Barlow, IBM_Plex_Mono } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const barlow = Barlow({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-barlow",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const mono = IBM_Plex_Mono({
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -27,10 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang="de"
+      className={`${barlow.variable} ${mono.variable} h-full antialiased`}
     >
-      <body className="block overflow-x-hidden leading-normal text-[#221c35]">
+      <body className="overflow-x-hidden pt-18 bg-[#f5f2f0] text-[#221c35] font-(--font-barlow) leading-normal">
         <Header />
         {children}
         <Footer />

@@ -7,7 +7,7 @@ export default function KeyMessage() {
       <div className="mx-auto w-[92%] max-w-310">
         <div className="grid grid-cols-1 gap-8 min-[900px]:grid-cols-[1.05fr_1fr] min-[900px]:gap-17.5">
           <div>
-            <span className="mb-5 block text-[12px] font-bold uppercase tracking-[0.16em] text-(--ink)">
+            <span className="mb-5 block font-(--font-mono) text-[12px] uppercase tracking-[0.16em] text-ink">
               // Kernbotschaft
             </span>
             <h2 className="text-[clamp(42px,5vw,72px)] font-medium leading-[1.14] tracking-[-0.02em] text-(--soft)">

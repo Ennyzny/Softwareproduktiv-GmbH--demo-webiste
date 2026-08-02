@@ -4,8 +4,8 @@ import logo2 from "@/public/projectphotos/logo2.png";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-40 border-b border-(--divider) bg-[rgba(245,242,240,.85)] backdrop-blur-md backdrop-saturate-180">
-      <div className="mx-auto flex h-18 w-[92%] max-w-310 items-center justify-between gap-5">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-(--divider) bg-[rgba(245,242,240,.85)] backdrop-blur-md backdrop-saturate-180">
+      <div className="mx-auto flex h-18 max-w-310 items-center justify-between px-6 lg:px-10">
         <a
           href="#top"
           aria-label="Softwareproduktiv"
