@@ -2,7 +2,6 @@
 
 :root {
   --background: #f5f2f0;
-
   --primary: #2e1a47;
   --dark: #2b1b44;
   --accent: #512d6d;
@@ -11,6 +10,9 @@
   --muted: #75787b;
   --soft: #a7adb8;
   --divider: #e5e7eb;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {

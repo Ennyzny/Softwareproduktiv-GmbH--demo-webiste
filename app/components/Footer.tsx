@@ -24,8 +24,8 @@ export default function Footer() {
                 ["#top", "// Kernbotschaft"],
                 ["#herausforderungen", "// Herausforderungen"],
                 ["#leistungen", "// Unser Ansatz"],
-                ["#leistungen", "// Philosophie"],
-                ["#leistungen", "// Eigenentwicklungen"],
+                ["#philosophie", "// Philosophie"],
+                ["#eigenentwicklungen", "// Eigenentwicklungen"],
                 ["#leistungen", "// Leistungen"],
               ].map(([href, text]) => (
                 <a
@@ -44,12 +44,12 @@ export default function Footer() {
             </h4>
             <nav className="mt-7.5 text-[13px]">
               {[
-                ["#leistungen", "// Fördermittel"],
-                ["#leistungen", "// Effekte"],
-                ["#herausforderungen", "// Unser Grundsatz"],
-                ["#", "// Der nächste Schritt"],
-                ["#", "// Kontakt"],
-                ["#", "// Karriere"],
+                ["#funding", "// Fördermittel"],
+                ["#effekte", "// Effekte"],
+                ["#grundsatz", "// Unser Grundsatz"],
+                ["#kontakt", "// Der nächste Schritt"],
+                ["#kontakt", "// Kontakt"],
+                ["#karriere", "// Karriere"],
               ].map(([href, text]) => (
                 <a
                   key={text}
@@ -89,7 +89,7 @@ export default function Footer() {
         </div>
         <div className="mt-13 flex flex-wrap items-center justify-between gap-4 border-t border-white/15 pt-6.5 text-[12px] text-white/50">
           <div>© 2026 Softwareproduktiv GmbH // Alle Rechte vorbehalten.</div>
-          <div>
+          <div className="flex flex-wrap items-center gap-2">
             <a className="transition-colors hover:text-white" href="#">
               Impressum
             </a>
