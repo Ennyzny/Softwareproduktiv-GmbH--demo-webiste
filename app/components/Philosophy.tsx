@@ -1,25 +1,28 @@
 export default function Philosophy() {
   return (
-    <>
-      <section className="block isolate p-30 bg-[#f5f2f0]">
-        <div className="text-black flex gap-20">
+    <section id="philosophie" className="bg-[#f5f2f0] py-27.5">
+      <div className="mx-auto w-[92%] max-w-310">
+        <div className="grid grid-cols-1 gap-8 min-[900px]:grid-cols-[1.05fr_1fr] min-[900px]:gap-17.5">
           <div>
-            <span>//Philosophie</span>
-            <h2>
+            <span className="mb-5 block text-[12px] font-bold uppercase tracking-[0.16em] text-(--accent)">
+              // Philosophie
+            </span>
+            <h2 className="text-[clamp(42px,5vw,72px)] font-medium leading-[1.14] tracking-[-0.02em] text-(--soft)">
               Unabhängig
               <br />
-              <b>beraten, </b>
+              <span className="font-bold text-(--primary)">beraten,</span>{" "}
               passend
               <br />
               entscheiden.
             </h2>
           </div>
-          <div className="">
-            <p>
-              Nicht jede Herausforderung braucht neue Software. Und nicht jede
-              Software passt zu jedem Unternehmen.
+          <div>
+            <p className="mb-5 text-[28px] font-medium leading-[1.35] text-(--primary)">
+              Nicht jede Herausforderung braucht neue Software.
+              <br />
+              Und nicht jede Software passt zu jedem Unternehmen.
             </p>
-            <p className="mt-10">
+            <p className="max-w-[64ch] text-[17px] leading-[1.8] text-(--muted)">
               Unser unabhängiger Ansatz stellt sicher, dass du genau die
               Werkzeuge erhältst, die dein Geschäftsmodell optimal unterstützen.
               Von der Softwareauswahl über die Prozessgestaltung bis zur
@@ -29,7 +32,7 @@ export default function Philosophy() {
             </p>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

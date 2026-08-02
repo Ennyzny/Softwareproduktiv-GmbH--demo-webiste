@@ -1,37 +1,33 @@
 export default function TheNextStep() {
   return (
-    <>
-      <section className="block isolate p-30 border-t border-solid border-[#e5e7eb] bg-white">
-        <div className="block isolate items-center max-w-310 transform-none pr-10 pl-10 mr-auto ml-auto text-center opacity-100">
-          <span className="text-[13px] font-bold tracking-[0.14em] uppercase inline-block mb-5 text-[#221c35] box-border">
-            // Der nächste Schritt
-          </span>
-          <h2 className="block font-medium mb-5.5 text-[#a7adb8] leading-[1.1] tracking-[-.01em]">
-            Lass uns
-            <b className="text-[#2e1a47]"> Dein System </b>
-            anschauen.
-          </h2>
-          <p className="block isolate ml-8.5 mr-8.5 font-medium text-[17px] leading-[1.65] max-w-[60ch] text-[#75787b] border-box items-center">
-            In einem unverbindlichen, 15-minütigen Gespräch analysieren wir
-            deine aktuellen Datensilos und skizzieren eine konkrete Lösung.
-          </p>
-          <button className="auto inline-flex items-center gap-2.5 text-[13px] font-bold tracking-[0.08em] uppercase cursor-pointer text-white transition-[background] duration-[0.25s, transform] delay-150 px-6.5 py-3.75 border-0 bg-[#2e1a47]">
-            Erstgespräch vereinbaren
-          </button>
-          <div className="flex justify-center flex-wrap mt-6.5 text-[14px] font-semibold leading-normal">
-            <span className="pr-4 pl-4 relative text-[#75787b] ">
-              Kostenlos
-            </span>
-            <span className="pr-4 pl-4 relative text-[#75787b]">
-              Ohne Verpflichtung
-            </span>
-            <span className="pr-4 pl-4 relative text-[#75787b]">
-              {" "}
-              100% praxisbezogen
-            </span>
-          </div>
+    <section
+      id="kontakt"
+      className="border-t border-(--divider) bg-white pt-20.5 pb-19.5"
+    >
+      <div className="mx-auto flex w-[92%] max-w-310 flex-col items-center text-center">
+        <span className="mb-5 text-[12px] font-bold uppercase tracking-[0.16em] text-(--primary)">
+          // Der nächste Schritt
+        </span>
+        <h2 className="mb-6 text-center text-[clamp(42px,5vw,72px)] font-medium leading-[1.1] tracking-[-0.02em] text-(--soft)">
+          Lass uns{" "}
+          <span className="font-bold text-(--primary)">Dein System</span>{" "}
+          anschauen.
+        </h2>
+        <p className="mb-10 max-w-[60ch] text-[17px] leading-[1.75] text-(--muted)">
+          In einem unverbindlichen, 15-minütigen Gespräch analysieren wir deine
+          aktuellen Datensilos und skizzieren eine konkrete Lösung.
+        </p>
+        <button className="inline-flex items-center gap-2.5 rounded-none mb-7 bg-(--primary) px-6.5 py-3.75 text-[13px] font-bold uppercase tracking-[0.08em] text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-(--violet)">
+          Erstgespräch vereinbaren
+        </button>
+        <div className="mt-6.5 flex flex-wrap justify-center gap-y-2 gap-x-2 text-[14px] font-semibold text-(--muted)">
+          <span className="px-4">Kostenlos</span>
+          <span className="hidden text-(--divider) sm:inline">|</span>
+          <span className="px-4">Ohne Verpflichtung</span>
+          <span className="hidden text-(--divider) sm:inline">|</span>
+          <span className="px-4">100% praxisbezogen</span>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
