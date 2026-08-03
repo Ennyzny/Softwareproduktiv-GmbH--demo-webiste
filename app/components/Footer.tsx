@@ -22,11 +22,11 @@ export default function Footer() {
             <nav className="text-[13px]">
               {[
                 ["#top", "// Kernbotschaft"],
-                ["#herausforderungen", "// Herausforderungen"],
-                ["#leistungen", "// Unser Ansatz"],
-                ["#philosophie", "// Philosophie"],
-                ["#eigenentwicklungen", "// Eigenentwicklungen"],
-                ["#leistungen", "// Leistungen"],
+                ["#challenges", "// Herausforderungen"],
+                ["#services", "// Unser Ansatz"],
+                ["#services", "// Philosophie"],
+                ["#services", "// Eigenentwicklungen"],
+                ["#services", "// Leistungen"],
               ].map(([href, text]) => (
                 <a
                   key={text}
@@ -44,12 +44,12 @@ export default function Footer() {
             </h4>
             <nav className="mt-7.5 text-[13px]">
               {[
-                ["#funding", "// Fördermittel"],
-                ["#effekte", "// Effekte"],
-                ["#grundsatz", "// Unser Grundsatz"],
-                ["#kontakt", "// Der nächste Schritt"],
-                ["#kontakt", "// Kontakt"],
-                ["#karriere", "// Karriere"],
+                ["#services", "// Fördermittel"],
+                ["#services", "// Effekte"],
+                ["#hero", "// Unser Grundsatz"],
+                ["#", "// Der nächste Schritt"],
+                ["#", "// Kontakt"],
+                ["#", "// Karriere"],
               ].map(([href, text]) => (
                 <a
                   key={text}

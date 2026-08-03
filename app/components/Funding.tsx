@@ -7,7 +7,6 @@ export default function Funding() {
             // Fördermittel
           </span>
         </div>
-
         <div className="flex flex-wrap items-center justify-between gap-7.5 border border-(--divider) bg-white px-11 py-10">
           <div>
             <h3 className="mb-3 text-[clamp(19px,2vw,26px)] font-bold uppercase tracking-[.02em] leading-[1.3] text-(--primary)">
@@ -19,7 +18,6 @@ export default function Funding() {
               Grundlage für Investitionsentscheidungen zu schaffen.
             </p>
           </div>
-
           <button className="inline-flex items-center gap-2.5 bg-(--primary) px-6.5 py-3.75 text-[13px] font-bold uppercase tracking-[.08em] text-white transition-all duration-200 hover:-translate-y-px hover:bg-(--violet)">
             Termin vereinbaren
           </button>

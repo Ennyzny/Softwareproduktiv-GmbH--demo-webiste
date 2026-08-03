@@ -29,21 +29,21 @@ export default function Navbar() {
         <div className="flex items-center gap-10">
           <nav className="hidden items-center gap-10 min-[860px]:flex">
             <a
-              href="#karriere"
+              href="#"
               className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet)"
             >
               Karriere
             </a>
 
             <a
-              href="#leistungen"
+              href="#services"
               className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet)"
             >
               Leistungen
             </a>
 
             <a
-              href="#kontakt"
+              href="#"
               className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet)"
             >
               Anfrage

@@ -10,7 +10,14 @@
   --muted: #75787b;
   --soft: #a7adb8;
   --divider: #e5e7eb;
+
+  --fs-display: clamp(38px, 4.8vw, 60px);
+  --fs-h2: clamp(28px, 3.2vw, 40px);
+  --fs-h3: clamp(19px, 2vw, 26px);
+  --fs-body: 17px;
+  --fs-small: 15px;
 }
+
 html {
   scroll-behavior: smooth;
 }

@@ -6,7 +6,7 @@ export default function OurPrinciple() {
           // Unser Grundsatz
         </span>
 
-        <h2 className="text-[clamp(38px,4.8vw,60px)] font-medium leading-[1.22] tracking-[-.01em] text-[--primary]">
+        <h2 className="text-(--primary) text-(length:--fs-display) font-medium leading-[1.22] tracking-[-.01em]">
           Die meisten Probleme sind nicht komplex.
           <br />
           <b className="font-bold text-(--primary)">Sie sind unklar.</b>
