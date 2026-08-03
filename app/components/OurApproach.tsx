@@ -23,28 +23,34 @@ export default function OurApproach() {
                 01
               </div>
               <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal"></span>
-              <p>Wir analysieren bestehende Prozesse.</p>
+              <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
+                Wir analysieren bestehende Prozesse.
+              </p>
             </div>
             <div className="flex items-center pt-6 pb-6 overflow-x-hidden leading-normal text-(--ink)">
               <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
                 02
               </div>
               <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal"></span>
-              <p>Wir machen Engpässe sichtbar.</p>
+              <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
+                Wir machen Engpässe sichtbar.
+              </p>
             </div>
             <div className="flex items-center pt-6 pb-6 overflow-x-hidden leading-normal text-(--ink)">
               <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
                 03
               </div>
               <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal"></span>
-              <p>Wir beziehen die Menschen ein, die täglich damit arbeiten.</p>
+              <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
+                Wir beziehen die Menschen ein, die täglich damit arbeiten.
+              </p>
             </div>
             <div className="flex items-center pt-6 pb-6 overflow-x-hidden leading-normal text-(--ink)">
               <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
                 04
               </div>
               <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal"></span>
-              <p>
+              <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
                 Wir entwickeln Lösungen, die im Arbeitsalltag funktionieren.
               </p>
             </div>
