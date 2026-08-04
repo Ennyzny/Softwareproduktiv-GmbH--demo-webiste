@@ -1,9 +1,6 @@
 export default function TheNextStep() {
   return (
-    <section
-      id="kontakt"
-      className="border-t border-(--divider) bg-white py-17.5 md:py-30"
-    >
+    <section id="der-naechste-schritt" className="border-t border-(--divider) bg-white py-17.5 md:py-30">
       <div className="mx-auto max-w-310 flex flex-col items-center px-5 text-center sm:px-10">
         <span className="mb-5 text-[13px] font-bold uppercase tracking-[0.14em] text-(--accent)">
           // Der nächste Schritt
@@ -35,7 +32,7 @@ export default function TheNextStep() {
             Ohne Verpflichtung
           </span>
           <span className="relative px-4 before:content-['|'] before:absolute before:-left-0.5 before:text-(--divider)">
-            100&nbsp;% praxisbezogen
+            100% praxisbezogen
           </span>
         </div>
       </div>

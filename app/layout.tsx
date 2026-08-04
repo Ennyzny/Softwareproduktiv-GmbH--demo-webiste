@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Barlow, IBM_Plex_Mono } from "next/font/google";
+import ServiceTab from "./components/ServiceTab";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -32,8 +33,9 @@ export default function RootLayout({
       lang="de"
       className={`${barlow.variable} ${mono.variable} h-full antialiased`}
     >
-      <body className="overflow-x-hidden pt-18 bg-[#f5f2f0] text-[#221c35] font-(--font-barlow) leading-normal">
+      <body className="overflow-x-hidden">
         <Header />
+        <ServiceTab/>
         {children}
         <Footer />
       </body>

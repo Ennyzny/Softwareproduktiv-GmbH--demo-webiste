@@ -1,8 +1,7 @@
 "use client";
-
 export default function OwnDevelopments() {
   return (
-    <section className="relative overflow-hidden bg-(--dark) text-white">
+    <section id="eigenentwicklungen" className="relative overflow-hidden bg-(--dark) text-white">
       <div className="absolute inset-0 z-0 pointer-events-none opacity-90" />
       <div className="relative z-10 mx-auto max-w-310 px-5 py-16 text-center sm:px-10">
         <span className="mb-5 inline-block text-[13px] font-bold uppercase tracking-[0.14em] text-(--violet)">

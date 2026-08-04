@@ -1,3 +1,5 @@
+import styles from "./Footer.module.css";
+
 export default function Footer() {
   return (
     <footer className="w-full bg-(--primary) pt-18.5 pb-8.5 text-white/70">
@@ -22,11 +24,11 @@ export default function Footer() {
             <nav className="text-[13px]">
               {[
                 ["#top", "// Kernbotschaft"],
-                ["#challenges", "// Herausforderungen"],
-                ["#services", "// Unser Ansatz"],
-                ["#services", "// Philosophie"],
-                ["#services", "// Eigenentwicklungen"],
-                ["#services", "// Leistungen"],
+                ["#herausforderungen", "// Herausforderungen"],
+                ["#leistungen", "// Unser Ansatz"],
+                ["#leistungen", "// Philosophie"],
+                ["#leistungen", "// Eigenentwicklungen"],
+                ["#leistungen", "// Leistungen"],
               ].map(([href, text]) => (
                 <a
                   key={text}
@@ -44,8 +46,8 @@ export default function Footer() {
             </h4>
             <nav className="mt-7.5 text-[13px]">
               {[
-                ["#services", "// Fördermittel"],
-                ["#services", "// Effekte"],
+                ["#leistungen", "// Fördermittel"],
+                ["#leistungen", "// Effekte"],
                 ["#hero", "// Unser Grundsatz"],
                 ["#", "// Der nächste Schritt"],
                 ["#", "// Kontakt"],

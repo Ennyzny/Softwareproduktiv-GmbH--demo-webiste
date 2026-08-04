@@ -1,6 +1,6 @@
 export default function Funding() {
   return (
-    <section id="funding" className="py-17.5 md:py-30">
+    <section id="fördermittel" className="py-17.5 md:py-30">
       <div className="mx-auto max-w-310 px-5 sm:px-10">
         <div className="mb-4.5">
           <span className="inline-block text-[13px] font-bold uppercase tracking-[.14em] text-(--accent)">

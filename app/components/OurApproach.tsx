@@ -1,62 +1,63 @@
 export default function OurApproach() {
   return (
-    <>
-      <section className="block isolate box-border border-t-(--divider) border-b-(--divider) border-solid bg-white py-30 max-md:py-17.5">
-        <div className="block isolate box-border max-w-310 mr-auto ml-auto pr-10 pl-10">
-          <div className="max-w-205 transform-none opacity-100 mb-14 box-border block isolate leading-normal overflow-x-hidden">
-            <span className="text-[13px] font-bold tracking-[0.14em] text-color-(--accent) uppercase inline-block mb-5">
-              // Unser Ansatz
-            </span>
-            <h2 className="block isolate mb-6.5 text-(--primary) font-bold leading-[1.1] tracking-[-0.01em] text-(length:--fs-display)">
-              So arbeiten wir
-            </h2>
-            <p className="block isolate box-border text-(length:--fs-h3) text-(--primary) font-medium leading-normal max-w-[64ch]">
-              Unsere Beratung ist wie ein präziser Bauplan: Bevor die ersten
-              Steine deiner neuen digitalen Infrastruktur gesetzt werden,
-              stellen wir sicher, dass das Fundament stabil ist und alle Räume
-              perfekt ineinandergreifen.
+    <section
+      id="unser-ansatz"
+      className="border-y border-(--divider) bg-white py-[120px] max-md:py-[70px]"
+    >
+      <div className="mx-auto max-w-[1240px] px-10 max-md:px-6">
+        <div className="mb-14 max-w-[820px]">
+          <span className="mb-5 inline-block font-(--font-mono) text-[13px] font-bold uppercase tracking-[0.14em] text-(--accent)">
+            // Unser Ansatz
+          </span>
+          <h2 className="mb-[26px] text-(length:--fs-display) font-medium leading-[1.1] tracking-[-0.01em] text-(--primary)">
+            <b>So arbeiten wir</b>
+          </h2>
+          <p className="max-w-[64ch] text-(length:--fs-h3) font-medium leading-[1.5] text-(--primary)">
+            Unsere Beratung ist wie ein präziser Bauplan: Bevor die ersten
+            Steine deiner neuen digitalen Infrastruktur gesetzt werden,
+            stellen wir sicher, dass das Fundament stabil ist und alle Räume
+            perfekt ineinandergreifen.
+          </p>
+        </div>
+        <div className="max-w-[820px]">
+          <div className="flex items-start py-6 max-md:flex-col max-md:gap-4">
+            <div className="flex h-12 w-[58px] shrink-0 items-center justify-center rounded-l-[24px] bg-(--primary) text-[19px] font-bold text-white">
+              01
+            </div>
+            <span className="ml-[10px] mr-[16px] mt-[23px] h-[2px] w-[26px] shrink-0 bg-(--primary) max-md:hidden"></span>
+            <p className="text-(length:--fs-h3) font-bold leading-[1.3] text-(--primary)">
+              Wir analysieren bestehende Prozesse.
             </p>
           </div>
-          <div className="max-w-205 transform-none opacity-100 mt-6.5 overflow-x-hidden">
-            <div className="flex items-center pt-6 pb-6 overflow-x-hidden leading-normal text-(--ink)">
-              <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
-                01
-              </div>
-              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal bg-(--primary)"></span>
-              <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
-                Wir analysieren bestehende Prozesse.
-              </p>
+          <div className="flex items-start py-6 max-md:flex-col max-md:gap-4">
+            <div className="flex h-12 w-[58px] shrink-0 items-center justify-center rounded-l-[24px] bg-(--primary) text-[19px] font-bold text-white">
+              02
             </div>
-            <div className="flex items-center pt-6 pb-6 overflow-x-hidden leading-normal text-(--ink)">
-              <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
-                02
-              </div>
-              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal bg-(--primary)"></span>
-              <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
-                Wir machen Engpässe sichtbar.
-              </p>
+            <span className="ml-[10px] mr-[16px] mt-[23px] h-[2px] w-[26px] shrink-0 bg-(--primary) max-md:hidden"></span>
+            <p className="text-(length:--fs-h3) font-bold leading-[1.3] text-(--primary)">
+              Wir machen Engpässe sichtbar.
+            </p>
+          </div>
+          <div className="flex items-start py-6 max-md:flex-col max-md:gap-4">
+            <div className="flex h-12 w-[58px] shrink-0 items-center justify-center rounded-l-[24px] bg-(--primary) text-[19px] font-bold text-white">
+              03
             </div>
-            <div className="flex items-center pt-6 pb-6 overflow-x-hidden leading-normal text-(--ink)">
-              <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
-                03
-              </div>
-              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal bg-(--primary)"></span>
-              <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
-                Wir beziehen die Menschen ein, die täglich damit arbeiten.
-              </p>
+            <span className="ml-[10px] mr-[16px] mt-[23px] h-[2px] w-[26px] shrink-0 bg-(--primary) max-md:hidden"></span>
+            <p className="text-(length:--fs-h3) font-bold leading-[1.3] text-(--primary)">
+              Wir beziehen die Menschen ein, die täglich damit arbeiten.
+            </p>
+          </div>
+          <div className="flex items-start py-6 max-md:flex-col max-md:gap-4">
+            <div className="flex h-12 w-[58px] shrink-0 items-center justify-center rounded-l-[24px] bg-(--primary) text-[19px] font-bold text-white">
+              04
             </div>
-            <div className="flex items-center pt-6 pb-6 overflow-x-hidden leading-normal text-(--ink)">
-              <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
-                04
-              </div>
-              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal bg-(--primary)"></span>
-              <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
-                Wir entwickeln Lösungen, die im Arbeitsalltag funktionieren.
-              </p>
-            </div>
+            <span className="ml-[10px] mr-[16px] mt-[23px] h-[2px] w-[26px] shrink-0 bg-(--primary) max-md:hidden"></span>
+            <p className="text-(length:--fs-h3) font-bold leading-[1.3] text-(--primary)">
+              Wir entwickeln Lösungen, die im Arbeitsalltag funktionieren.
+            </p>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

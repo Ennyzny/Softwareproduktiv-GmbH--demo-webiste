@@ -1,119 +1,219 @@
+
 export default function Services() {
   return (
-    <>
-      <section
-        id="services"
-        className="block isolate p-30 bg-white border-b border-solid border-(--divider) box-border leading-norma overflow-x-hidden"
-      >
-        <div className=" max-w-310 mr-auto ml-auto pr-10 pl-10 box-border block isolate leading-normal text-(--ink)">
-          <div className="opacity-100 transform-none ml-auto mr-auto text-center max-w-190 mb-14 box-border block isolate leading-normal">
-            <span className="text-center box-border mb-5 inline-block uppercase text-(--accent) tracking-[.14em] font-bold text-[13px]">
-              // Leistungen
+    <section
+      id="leistungen"
+      className="w-full border-b border-(--divider) bg-white text-(--ink)"
+    >
+      <div className="mx-auto max-w-310 px-6 py-20 min-[821px]:px-10 min-[821px]:py-30">
+        <div className="mx-auto mb-14 max-w-190 text-center">
+          <span className="mb-5 inline-block text-[13px] font-bold uppercase tracking-[0.14em] text-(--accent)">
+            // Leistungen
+          </span>
+          <h2 className="text-(length:--fs-display) font-bold leading-[1.1] tracking-[-0.01em] text-(--primary)">
+            Unsere Lösungen{" "}
+            <span className="font-medium text-(--soft)">
+              für Ihren Betrieb.
             </span>
-            <h2 className="block isolate box-border tracking-[-.01em] leading-[1.1] font-bold text-(length:--fs-display) text-(--primary)">
-              Unsere Lösungen
-              <span className=" font-medium box-border tracking-[-.01em] leading-[1.1] text-(length:--fs-display) text-(--soft) text-center">
-                {" "}
-                für Ihren Betrieb.
-              </span>
-            </h2>
-            <p className="text-center block isolate box-border mt-4 mr-auto ml-auto text-(length:--fs-body) text-(--muted) font-medium leading-[1.65] max-w-[60ch]">
-              Von der Analyse bis zur Umsetzung: Ob ERP-Anpassung,
-              Lagerdigitalisierung, mobile Anwendungen oder Schnittstellen – wir
-              begleiten Unternehmen vom ersten Konzept bis zur produktiven
-              Lösung.
-            </p>
+          </h2>
+          <p className="mx-auto mt-4 max-w-[60ch] text-(length:--fs-body) font-medium leading-[1.65] text-(--muted)">
+            Von der Analyse bis zur Umsetzung: Ob ERP-Anpassung,
+            Lagerdigitalisierung, mobile Anwendungen oder Schnittstellen – wir
+            begleiten Unternehmen vom ersten Konzept bis zur produktiven
+            Lösung.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 min-[821px]:grid-cols-2">
+          <div
+            className="
+              relative flex flex-col px-6 py-12 text-center
+              min-[821px]:px-16 min-[821px]:py-14
+              after:absolute after:right-0 after:top-11 after:bottom-11 after:w-px after:bg-(--divider)
+              max-[820px]:after:hidden
+            "
+          >
+            <div className="mx-auto mb-[30px] flex h-[78px] w-[78px] items-center justify-center rounded-full border-[3px] border-(--violet) bg-(--accent) shadow-[0_0_0_4px_rgba(168,85,247,.15)]">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="h-[30px] w-[30px] text-white"
+              >
+                <rect x="3" y="3" width="8" height="8" rx="1" />
+                <rect x="13" y="3" width="8" height="8" rx="1" />
+                <rect x="3" y="13" width="8" height="8" rx="1" />
+                <rect x="13" y="13" width="8" height="8" rx="1" />
+              </svg>
+            </div>
+            <h3
+              className="
+                mb-3.5 text-[17px] font-bold uppercase leading-[1.1]
+                tracking-[0.06em] text-(--accent)
+                after:mx-auto after:mt-3.5 after:block after:h-0.5
+                after:w-11 after:bg-(--violet) after:content-['']
+              "
+            >
+              ERP & Individualentwicklung
+            </h3>
+            <div className="mb-4.5 text-[16px] font-bold leading-[1.5] text-(--ink)">
+              Wenn Standardsoftware nicht reicht, bauen wir den fehlenden Teil.
+            </div>
+            <div className="mx-auto mb-6.5 max-w-[52ch] text-(length:--fs-small) font-medium leading-[1.7] text-(--ink) opacity-[0.85]">
+              Softwareproduktiv unterstützt Unternehmen ganzheitlich bei der
+              Auswahl und Anpassung leistungsstarker ERP-Systeme. Auf Basis
+              fundierter Ist-Soll-Analysen entwickeln wir passgenaue
+              Individualsoftware, die gezielt dort ansetzt, wo
+              Standardlösungen an ihre Grenzen stoßen – von spezifischen
+              Schnittstellen über Webanwendungen bis zu praxiserprobten
+              Eigenentwicklungen wie stocklogistic oder BrickIt.
+            </div>
+            <div className="mt-auto text-[14px] font-bold leading-[1.5] tracking-[0.02em] text-(--accent)">
+              Schnittstellen, Erweiterungen oder komplette Lösungen.
+            </div>
           </div>
-          <div className="opacity-100 transform-none grid grid-cols-[1fr_1fr] box-border isolate leading-normal">
-            <div className="relatie bg-transparent flex flex-col text-center box-border leading-normal pt-14 pr-16 pb-14 pl-16">
-              <div></div>
-              <h3 className="block isolate leading-[1.1] text-(--accent) font-bold text-[17px] uppercase tracking-[.06em] mb-3.5 box-border">
-                ERP & Individualentwicklung
-              </h3>
-              <div className="block isolate text-center box-border mb-4.5 leading-normal font-bold text-[16px] text-(--ink)">
-                Wenn Standardsoftware nicht reicht, bauen wir den fehlenden
-                Teil.
-              </div>
-              <div className="block isolate box-border mr-auto ml-auto max-w-[52ch] mb-6.5 text-center opacity-[0.85] leading-[1.7] font-medium text-(--ink) text-(length:--fs-small)">
-                Softwareproduktiv unterstützt Unternehmen ganzheitlich bei der
-                Auswahl und Anpassung leistungsstarker ERP-Systeme. Auf Basis
-                fundierter Ist-Soll-Analysen entwickeln wir passgenaue
-                Individualsoftware, die gezielt dort ansetzt, wo
-                Standardlösungen an ihre Grenzen stoßen – von spezifischen
-                Schnittstellen über Webanwendungen bis zu praxiserprobten
-                Eigenentwicklungen wie stocklogistic oder BrickIt.
-              </div>
-              <div className="text-center block isolate box-border mt-auto text-[14px] font-bold tracking-[.02em] text-(--accent) leading-normal whitespace-pre-line">
-                Schnittstellen, Erweiterungen oder komplette Lösungen.
-              </div>
+          <div
+            className="
+              relative flex flex-col px-6 py-12 text-center
+              min-[821px]:px-16 min-[821px]:py-14
+            "
+          >
+            <div className="mx-auto mb-[30px] flex h-[78px] w-[78px] items-center justify-center rounded-full border-[3px] border-(--violet) bg-(--accent) shadow-[0_0_0_4px_rgba(168,85,247,.15)]">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="h-[30px] w-[30px] text-white"
+              >
+                <path d="M4 7h16M4 12h16M4 17h16M8 3v18" />
+              </svg>
             </div>
-            <div className="relatie bg-transparent flex flex-col text-center box-border leading-normal pt-14 pr-16 pb-14 pl-16">
-              <div></div>
-              <h3 className="block isolate leading-[1.1] text-(--accent) font-bold text-[17px] uppercase tracking-[.06em] mb-3.5 box-border">
-                Lagerverwaltung / Schnittstellen
-              </h3>
-              <div className="block isolate text-center box-border mb-4.5 leading-normal font-bold text-[16px] text-(--ink)">
-                Deine Systeme sprechen nicht miteinander? Wir sorgen dafür, dass
-                sie es tun.
-              </div>
-              <div className="block isolate box-border mr-auto ml-auto max-w-[52ch] mb-6.5 text-center opacity-[0.85] leading-[1.7] font-medium text-(--ink) text-(length:--fs-small)">
-                Mit stocklogistic bietet softwareproduktiv ein leistungsfähiges
-                Lagerverwaltungssystem, das durch transparenten Materialfluss
-                und papierlose, barcodegestützte Kommissionierung für höchste
-                Effizienz sorgt. Unsere Lösung lässt sich dank flexibler
-                Schnittstellen nahtlos an gängige ERP- und Lagerliftsysteme
-                anbinden und sichert medienbruchfreie, durchgängige Datenflüsse.
-              </div>
-              <div className="text-center block isolate box-border mt-auto text-[14px] font-bold tracking-[.02em] text-(--accent) leading-normal whitespace-pre-line">
-                Durchgängige Daten. Klare Prozesse.
-              </div>
+            <h3
+              className="
+                mb-3.5 text-[17px] font-bold uppercase leading-[1.1]
+                tracking-[0.06em] text-(--accent)
+                after:mx-auto after:mt-3.5 after:block after:h-0.5
+                after:w-11 after:bg-(--violet) after:content-['']
+              "
+            >
+              Lagerverwaltung / Schnittstellen
+            </h3>
+            <div className="mb-4.5 text-[16px] font-bold leading-[1.5] text-(--ink)">
+              Deine Systeme sprechen nicht miteinander? Wir sorgen dafür, dass
+              sie es tun.
             </div>
-            <div className="relatie bg-transparent flex flex-col text-center box-border leading-normal pt-14 pr-16 pb-14 pl-16">
-              <div></div>
-              <h3 className="block isolate leading-[1.1] text-(--accent) font-bold text-[17px] uppercase tracking-[.06em] mb-3.5 box-border">
-                Prozessoptimierung & Beratung
-              </h3>
-              <div className="block isolate text-center box-border mb-4.5 leading-normal font-bold text-[16px] text-(--ink)">
-                Bevor neue Software kommt, bringen wir Struktur rein.
-              </div>
-              <div className="block isolate box-border mr-auto ml-auto max-w-[52ch] mb-6.5 text-center opacity-[0.85] leading-[1.7] font-medium text-(--ink) text-(length:--fs-small)">
-                Softwareproduktiv bietet eine integrierte Prozessoptimierung und
-                Digitalisierungsberatung, die strukturierte Analysen mit einer
-                herstellerneutralen Technologie-Roadmap vereint. In gemeinsamen
-                Workshops erarbeiten wir präzise Ist-Soll-Konzepte und binden
-                deine Mitarbeiter aus allen Fachbereichen aktiv ein – inklusive
-                Begleitung bei GoBD-konformen Verfahrensdokumentationen und der
-                Identifizierung passender Fördermittel.
-              </div>
-              <div className="text-center block isolate box-border mt-auto text-[14px] font-bold tracking-[.02em] text-(--accent) leading-normal whitespace-pre-line">
-                Ist-Soll-Konzepte, praxisnahe Lösungen, Fördermittel
-              </div>
+            <div className="mx-auto mb-6.5 max-w-[52ch] text-(length:--fs-small) font-medium leading-[1.7] text-(--ink) opacity-[0.85]">
+              Mit stocklogistic bietet softwareproduktiv ein leistungsfähiges
+              Lagerverwaltungssystem, das durch transparenten Materialfluss
+              und papierlose, barcodegestützte Kommissionierung für höchste
+              Effizienz sorgt. Unsere Lösung lässt sich dank flexibler
+              Schnittstellen nahtlos an gängige ERP- und Lagerliftsysteme
+              anbinden und sichert medienbruchfreie, durchgängige Datenflüsse.
             </div>
-            <div className="relatie bg-transparent flex flex-col text-center box-border leading-normal pt-14 pr-16 pb-14 pl-16">
-              <div></div>
-              <h3 className="block isolate leading-[1.1] text-(--accent) font-bold text-[17px] uppercase tracking-[.06em] mb-3.5 box-border">
-                App-Entwicklung
-              </h3>
-              <div className="block isolate text-center box-border mb-4.5 leading-normal font-bold text-[16px] text-(--ink)">
-                Deine Prozesse gehören dahin, wo gearbeitet wird. Wir bringen
-                sie aufs Handy, ins Lager oder den Außendienst.
-              </div>
-              <div className="block isolate box-border mr-auto ml-auto max-w-[52ch] mb-6.5 text-center opacity-[0.85] leading-[1.7] font-medium text-(--ink) text-(length:--fs-small)">
-                Softwareproduktiv entwickelt maßgeschneiderte mobile
-                Anwendungen, die deine Geschäftsprozesse exakt dort
-                unterstützen, wo stationäre Standardsoftware an ihre Grenzen
-                stößt. Wir schließen funktionale Lücken und realisieren
-                medienbruchfreie Workflows, die im mobilen Arbeitsalltag für
-                maximale Effizienz sorgen – stabil angebunden an gängige
-                ERP-Systeme.
-              </div>
-              <div className="text-center block isolate box-border mt-auto text-[14px] font-bold tracking-[.02em] text-(--accent) leading-normal whitespace-pre-line">
-                Barcode statt Papier. Echtzeit statt Vermuten.
-              </div>
+            <div className="mt-auto text-[14px] font-bold leading-[1.5] tracking-[0.02em] text-(--accent)">
+              Durchgängige Daten. Klare Prozesse.
+            </div>
+          </div>
+          <div
+            className="
+              relative flex flex-col px-6 py-12 text-center
+              before:absolute before:top-0 before:left-[34px] before:right-[34px]
+              before:h-px before:bg-(--divider)
+              after:absolute after:right-0 after:top-11 after:bottom-11
+              after:w-px after:bg-(--divider)
+              max-[820px]:after:hidden
+              min-[821px]:px-16 min-[821px]:py-14
+            "
+          >
+            <div className="mx-auto mb-[30px] flex h-[78px] w-[78px] items-center justify-center rounded-full border-[3px] border-(--violet) bg-(--accent) shadow-[0_0_0_4px_rgba(168,85,247,.15)]">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="h-[30px] w-[30px] text-white"
+              >
+                <path d="M3 3v18h18" />
+                <path d="M7 14l3-3 3 3 5-6" />
+              </svg>
+            </div>
+            <h3
+              className="
+                mb-3.5 text-[17px] font-bold uppercase leading-[1.1]
+                tracking-[0.06em] text-(--accent)
+                after:mx-auto after:mt-3.5 after:block after:h-0.5
+                after:w-11 after:bg-(--violet) after:content-['']
+              "
+            >
+              Prozessoptimierung & Beratung
+            </h3>
+            <div className="mb-4.5 text-[16px] font-bold leading-[1.5] text-(--ink)">
+              Bevor neue Software kommt, bringen wir Struktur rein.
+            </div>
+            <div className="mx-auto mb-6.5 max-w-[52ch] text-(length:--fs-small) font-medium leading-[1.7] text-(--ink) opacity-[0.85]">
+              Softwareproduktiv bietet eine integrierte Prozessoptimierung und
+              Digitalisierungsberatung, die strukturierte Analysen mit einer
+              herstellerneutralen Technologie-Roadmap vereint. In gemeinsamen
+              Workshops erarbeiten wir präzise Ist-Soll-Konzepte und binden
+              deine Mitarbeiter aus allen Fachbereichen aktiv ein – inklusive
+              Begleitung bei GoBD-konformen Verfahrensdokumentationen und der
+              Identifizierung passender Fördermittel.
+            </div>
+            <div className="mt-auto text-[14px] font-bold leading-[1.5] tracking-[0.02em] text-(--accent)">
+              Ist-Soll-Konzepte, praxisnahe Lösungen, Fördermittel
+            </div>
+          </div>
+          <div
+            className="
+              relative flex flex-col px-6 py-12 text-center
+              before:absolute before:top-0 before:left-[34px] before:right-[34px]
+              before:h-px before:bg-(--divider)
+              min-[821px]:px-16 min-[821px]:py-14
+            "
+          >
+            <div className="mx-auto mb-[30px] flex h-[78px] w-[78px] items-center justify-center rounded-full border-[3px] border-(--violet) bg-(--accent) shadow-[0_0_0_4px_rgba(168,85,247,.15)]">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="h-[30px] w-[30px] text-white"
+              >
+                <rect x="7" y="2" width="10" height="20" rx="2" />
+                <path d="M11 18h2" />
+              </svg>
+            </div>
+            <h3
+              className="
+                mb-3.5 text-[17px] font-bold uppercase leading-[1.1]
+                tracking-[0.06em] text-(--accent)
+                after:mx-auto after:mt-3.5 after:block after:h-0.5
+                after:w-11 after:bg-(--violet) after:content-['']
+              "
+            >
+              App-Entwicklung
+            </h3>
+            <div className="mb-4.5 text-[16px] font-bold leading-[1.5] text-(--ink)">
+              Deine Prozesse gehören dahin, wo gearbeitet wird. Wir bringen sie
+              aufs Handy, ins Lager oder den Außendienst.
+            </div>
+            <div className="mx-auto mb-6.5 max-w-[52ch] text-(length:--fs-small) font-medium leading-[1.7] text-(--ink) opacity-[0.85]">
+              Softwareproduktiv entwickelt maßgeschneiderte mobile
+              Anwendungen, die deine Geschäftsprozesse exakt dort
+              unterstützen, wo stationäre Standardsoftware an ihre Grenzen
+              stößt. Wir schließen funktionale Lücken und realisieren
+              medienbruchfreie Workflows, die im mobilen Arbeitsalltag für
+              maximale Effizienz sorgen – stabil angebunden an gängige
+              ERP-Systeme.
+            </div>
+            <div className="mt-auto text-[14px] font-bold leading-[1.5] tracking-[0.02em] text-(--accent)">
+              Barcode statt Papier. Echtzeit statt Vermuten.
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
+

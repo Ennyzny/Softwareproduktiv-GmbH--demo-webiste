@@ -1,47 +1,49 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import logo from "@/public/projectphotos/logo.png";
 import logo2 from "@/public/projectphotos/logo2.png";
 
-export default function Navbar() {
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-(--divider) bg-[rgba(245,242,240,.85)] backdrop-blur-md backdrop-saturate-180">
-      <div className="mx-auto flex h-18 max-w-310 items-center justify-between px-6 lg:px-10">
+    <header className="sticky top-0 z-50 w-full border-b border-(--divider) bg-[rgba(245,242,240,.85)] backdrop-blur-[12px]">
+      <div className="mx-auto flex h-[72px] max-w-[1240px] items-center justify-between gap-5 px-6 lg:px-10">
         <a
           href="#top"
           aria-label="Softwareproduktiv"
-          className="flex items-center gap-3.25"
+          className="flex items-center gap-[13px]"
+          onClick={() => setIsOpen(false)}
         >
           <Image
             src={logo}
-            alt="Logo"
+            alt="Softwareproduktiv"
             width={38}
             height={30}
-            className="h-7.5 w-auto"
+            className="block h-[30px] w-auto"
           />
           <Image
             src={logo2}
             alt="Softwareproduktiv"
             width={204}
             height={14}
-            className="hidden h-3.5 w-auto min-[520px]:block"
+            className="hidden h-[14px] w-auto min-[521px]:block"
           />
         </a>
         <div className="flex items-center gap-10">
-          <nav className="hidden items-center gap-10 min-[860px]:flex">
+          <nav className="hidden items-center gap-10 min-[861px]:flex">
             <a
               href="#"
               className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet)"
             >
               Karriere
             </a>
-
             <a
-              href="#services"
+              href="#leistungen"
               className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet)"
             >
               Leistungen
             </a>
-
             <a
               href="#"
               className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet)"
@@ -50,15 +52,48 @@ export default function Navbar() {
             </a>
           </nav>
           <button
+            type="button"
             aria-label="Menü"
-            className="flex flex-col gap-1.25 p-2 min-[860px]:hidden"
+            aria-expanded={isOpen}
+            onClick={() => setIsOpen(!isOpen)}
+            className="flex cursor-pointer flex-col gap-[5px] border-0 bg-transparent p-2 min-[861px]:hidden"
           >
-            <span className="h-0.5 w-6 bg-(--primary)"></span>
-            <span className="h-0.5 w-6 bg-(--primary)"></span>
-            <span className="h-0.5 w-6 bg-(--primary)"></span>
+            <span className="block h-[2px] w-6 bg-(--primary)" />
+            <span className="block h-[2px] w-6 bg-(--primary)" />
+            <span className="block h-[2px] w-6 bg-(--primary)" />
           </button>
         </div>
+      </div>
+      <div
+        className={`overflow-hidden bg-[rgba(245,242,240,.97)] transition-all duration-200 min-[861px]:hidden ${
+          isOpen ? "max-h-60 border-t border-(--divider)" : "max-h-0"
+        }`}
+      >
+        <nav className="flex flex-col px-6">
+          <a
+            href="#"
+            onClick={() => setIsOpen(false)}
+            className="border-b border-(--divider) py-4 text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink)"
+          >
+            Karriere
+          </a>
+          <a
+            href="#leistungen"
+            onClick={() => setIsOpen(false)}
+            className="border-b border-(--divider) py-4 text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink)"
+          >
+            Leistungen
+          </a>
+          <a
+            href="#"
+            onClick={() => setIsOpen(false)}
+            className="py-4 text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink)"
+          >
+            Anfrage
+          </a>
+        </nav>
       </div>
     </header>
   );
 }
+
