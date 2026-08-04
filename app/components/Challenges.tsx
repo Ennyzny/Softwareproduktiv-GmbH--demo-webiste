@@ -3,9 +3,9 @@ export default function Challenges() {
     <>
       <section
         id="challenges"
-        className="block isolate p-30 bg-(--background) box-border"
+        className="block isolate py-30 max-[768px]:py-17.5 bg-(--background) box-border"
       >
-        <div className="max-w-310 mr-auto ml-auto pr-10 pl-10 box-border leading-normal overflow-x-hidden">
+        <div className="max-w-310 mr-auto ml-auto pr-10 pl-10 max-[640px]:px-5 box-border leading-normal overflow-x-hidden">
           <div className="block isolate box-border mb-14 max-w-190 opacity-100 transform-none leading-1.5 overflow-x-hidden">
             <span className="text-[13px] font-bold tracking-[.14em] text-(--accent) uppercase inline-block mb-5 leading-normal overflow-x-hidden">
               // Herausforderungen
@@ -14,7 +14,7 @@ export default function Challenges() {
               Kommt dir das bekannt vor?
             </h2>
           </div>
-          <div className="grid grid-cols-[repeat(3,1fr)] gap-6.5 opacity-100 transform-none box-border">
+          <div className="grid grid-cols-[repeat(3,1fr)] max-[900px]:grid-cols-2 max-[600px]:grid-cols-1 :gap-6.5 opacity-100 transform-none box-border">
             <div className="flex relative flex-col bg-white min-h-77 pt-10 pr-8.5 pb-8.5 pl-8.5 leading-normal overflow-x-hidden">
               <h3 className="block isolate font-bold text-(length:--fs-h3) uppercase tracking-[.005em] leading-[1.3] mb-5.5 box-border">
                 Im Lager fehlt der Überblick.

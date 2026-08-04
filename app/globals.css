@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  --maxw: 1240px;
   --background: #f5f2f0;
   --primary: #2e1a47;
   --dark: #2b1b44;
@@ -23,7 +24,6 @@ html {
 }
 
 body {
-  margin: 0;
   background: var(--background);
   font-family: var(--font-barlow), sans-serif;
   -webkit-font-smoothing: antialiased;
