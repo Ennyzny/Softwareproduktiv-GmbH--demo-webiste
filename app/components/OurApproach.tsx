@@ -22,7 +22,7 @@ export default function OurApproach() {
               <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
                 01
               </div>
-              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal"></span>
+              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal bg-(--primary)"></span>
               <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
                 Wir analysieren bestehende Prozesse.
               </p>
@@ -31,7 +31,7 @@ export default function OurApproach() {
               <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
                 02
               </div>
-              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal"></span>
+              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal bg-(--primary)"></span>
               <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
                 Wir machen Engpässe sichtbar.
               </p>
@@ -40,7 +40,7 @@ export default function OurApproach() {
               <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
                 03
               </div>
-              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal"></span>
+              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal bg-(--primary)"></span>
               <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
                 Wir beziehen die Menschen ein, die täglich damit arbeiten.
               </p>
@@ -49,7 +49,7 @@ export default function OurApproach() {
               <div className="flex min-w-14.5 h-12 items-center justify-center font-bold text-[19px] pr-1.5 pl-2.5 bg-(--primary) text-white py-0 rounded-tl-3xl rounded-tr-none rounded-br-none rounded-bl-3xl rounded-[24px_0_0_24px]">
                 04
               </div>
-              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal"></span>
+              <span className="flex-[0_0_auto] w-6.5 h-0.5 ml-2.5 mr-4 my-0 box-border text-(--ink) leading-normal bg-(--primary)"></span>
               <p className="font-bold border-box leading-[1.3] text-(--primary) text-(length:--fs-h3)">
                 Wir entwickeln Lösungen, die im Arbeitsalltag funktionieren.
               </p>

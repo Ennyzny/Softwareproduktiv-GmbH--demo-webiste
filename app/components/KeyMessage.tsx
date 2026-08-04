@@ -2,38 +2,35 @@ export default function KeyMessage() {
   return (
     <section
       id="kernbotschaft"
-      className="border-b border-(--divider) bg-white py-27.5"
+      className="block isolate box-border bg-[#ffffff] border-b border-b-(--divider) py-17.5 md:py-30"
     >
-      <div className="mx-auto w-[92%] max-w-310">
-        <div className="grid grid-cols-1 gap-8 min-[900px]:grid-cols-[1.05fr_1fr] min-[900px]:gap-17.5">
-          <div>
-            <span className="mb-5 block font-(--font-mono) text-[12px] uppercase tracking-[0.16em] text-ink">
-              // Kernbotschaft
-            </span>
-            <h2 className="text-[clamp(42px,5vw,72px)] font-medium leading-[1.14] tracking-[-0.02em] text-(--soft)">
-              Software fürs
-              <br />
-              <b className="font-bold text-(--primary)">Handwerk,</b>
-              <br />
-              die im Alltag
-              <br />
-              funktioniert.
-            </h2>
-          </div>
-          <div>
-            <p className="mb-5 text-[28px] font-medium leading-[1.35] text-(--primary)">
-              Wir bringen Struktur in Ihre Abläufe.
-              <br />
-              Und machen sie steuerbar.
-            </p>
-            <p className="max-w-[64ch] text-[17px] leading-[1.8] text-(--muted)">
-              Softwareproduktiv unterstützt Unternehmen ganzheitlich bei der
-              Auswahl und Anpassung leistungsstarker ERP-Systeme, um
-              durchgängige, medienbruchfreie Workflows zu realisieren. Wir
-              verbinden Beratung, Prozessverständnis und Individualentwicklung
-              zu Lösungen, die exakt auf dein Unternehmen zugeschnitten sind.
-            </p>
-          </div>
+      <div className="grid grid-cols-1 gap-8 items-start min-[860px]:grid-cols-[1.05fr_1fr] min-[860px]:gap-17.5 max-w-(--maxw) mx-auto px-10">
+        <div className="opacity-100 transform-none box-border block isolate text-(--ink) leading-normal">
+          <span className="box-border leading-normal text-[13px] font-bold tracking-[.14em] text-(--accent) uppercase inline-block mb-5">
+            // Kernbotschaft
+          </span>
+          <h2 className="block isolate box-border tracking-[-.01em] leading-[1.14] text-(--soft) font-medium text-(length:--fs-display)">
+            Software fürs{" "}
+            <b className="text-(--primary) font-bold box-border text-(length:--fs-display) leading-[1.14] tracking-[0.01em]">
+              Handwerk,{" "}
+            </b>
+            <br />
+            die im Alltag funktioniert.
+          </h2>
+        </div>
+        <div>
+          <p className="block isolate box-border mb-5 leading-[1.35] font-medium text-(--primary) text-(length:--fs-h3)">
+            Wir bringen Struktur in Ihre Abläufe.
+            <br />
+            Und machen sie steuerbar.
+          </p>
+          <p className="block isolate box-border max-w-[60ch] leading-[1.65] font-medium text-(length:--fs-body) text-(--muted)">
+            Softwareproduktiv unterstützt Unternehmen ganzheitlich bei der
+            Auswahl und Anpassung leistungsstarker ERP-Systeme, um durchgängige,
+            medienbruchfreie Workflows zu realisieren. Wir verbinden Beratung,
+            Prozessverständnis und Individualentwicklung zu Lösungen, die exakt
+            auf dein Unternehmen zugeschnitten sind.
+          </p>
         </div>
       </div>
     </section>
