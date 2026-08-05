@@ -25,9 +25,9 @@ export default function Header() {
           <Image
             src={logo2}
             alt="Softwareproduktiv"
-            width={204.33}
+            width={204}
             height={14}
-            className="hidden h-3.5 w-auto min-[521px]:block"
+            className="hidden h-3.5  min-[521px]:block"
           />
         </a>
         <div className="flex items-center gap-10">
