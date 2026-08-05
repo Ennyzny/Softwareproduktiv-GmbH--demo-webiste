@@ -163,7 +163,7 @@ export default function Services() {
             </div>
             <div className="mt-auto text-[14px] font-bold leading-normal tracking-[0.02em] text-(--accent) whitespace-pre-line">
               Ist-Soll-Konzepte, praxisnahe <br />
-              Lösungen, Fördermittel
+              Lösungen, Fördermittel.
             </div>
           </div>
           <div
