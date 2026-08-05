@@ -24,7 +24,7 @@ export default function OwnDevelopments() {
           </p>
           <button
             onClick={() =>
-              document.getElementById("services")?.scrollIntoView()
+              document.getElementById("leistungen")?.scrollIntoView()
             }
             className="inline-flex cursor-pointer items-center gap-2.5 border-[1.5px] border-white/60 bg-transparent px-6.5 py-3.75 text-[13px] font-bold uppercase tracking-[0.08em] text-white transition-all duration-200 hover:border-white hover:bg-white hover:text-(--primary)"
           >
