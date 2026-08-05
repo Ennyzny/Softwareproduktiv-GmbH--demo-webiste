@@ -6,7 +6,7 @@ export default function OwnDevelopments() {
       className="leading-normal box-border bg-(--dark) relative text-white overflow-hidden m-0 p-0"
     >
       <div className="">
-        <div className="eading-normal text-white box-border max-w-310 text-center relative z-1 mx-auto my-0 px-0 py-16">
+        <div className="leading-normal text-white box-border max-w-310 text-center relative z-1 mx-auto my-0 px-0 py-16">
           <span className="mb-5 inline-block text-[13px] font-bold uppercase tracking-[0.14em] text-(--violet)">
             // Eigenentwicklungen
           </span>

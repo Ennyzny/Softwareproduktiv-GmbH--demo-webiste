@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 w-full border-b border-b-(--divider) bg-[rgba(245,242,240,.85)] backdrop-blur-md backdrop-saturate-180">
-      <div className="mx-auto flex h-18 max-w-310 items-center justify-between gap-5 px-6 lg:px-10">
+      <div className="text-(--ink) leading-normal box-border max-w-(--maxw) not-last:flex items-center justify-between h-18 gap-5 mx-auto my-0 px-5 md:px-10 py-0">
         <a
           href="#top"
           aria-label="Softwareproduktiv"
@@ -18,14 +18,14 @@ export default function Header() {
           <Image
             src={logo}
             alt="Softwareproduktiv"
-            width={38}
+            width={38.34}
             height={30}
             className="block h-7.5 w-auto"
           />
           <Image
             src={logo2}
             alt="Softwareproduktiv"
-            width={204}
+            width={204.33}
             height={14}
             className="hidden h-3.5 w-auto min-[521px]:block"
           />

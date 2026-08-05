@@ -66,8 +66,9 @@ export default function Services() {
               Webanwendungen bis zu praxiserprobten Eigenentwicklungen wie
               stocklogistic oder BrickIt.
             </div>
-            <div className="mt-auto text-[14px] font-bold leading-normal tracking-[0.02em] text-(--accent)">
-              Schnittstellen, Erweiterungen oder komplette Lösungen.
+            <div className="mt-auto text-[14px] font-bold leading-normal tracking-[0.02em] text-(--accent) whitespace-pre-line">
+              Schnittstellen, Erweiterungen
+              <br /> oder komplette Lösungen.
             </div>
           </div>
           <div
@@ -109,8 +110,10 @@ export default function Services() {
               Schnittstellen nahtlos an gängige ERP- und Lagerliftsysteme
               anbinden und sichert medienbruchfreie, durchgängige Datenflüsse.
             </div>
-            <div className="mt-auto text-[14px] font-bold leading-normal tracking-[0.02em] text-(--accent)">
-              Durchgängige Daten. Klare Prozesse.
+            <div className="mt-auto text-[14px] font-bold leading-normal tracking-[0.02em] text-(--accent) whitespace-pre-line">
+              Durchgängige Daten.
+              <br />
+              Klare Prozesse.
             </div>
           </div>
           <div
@@ -158,8 +161,9 @@ export default function Services() {
               Begleitung bei GoBD-konformen Verfahrensdokumentationen und der
               Identifizierung passender Fördermittel.
             </div>
-            <div className="mt-auto text-[14px] font-bold leading-normal tracking-[0.02em] text-(--accent)">
-              Ist-Soll-Konzepte, praxisnahe Lösungen, Fördermittel
+            <div className="mt-auto text-[14px] font-bold leading-normal tracking-[0.02em] text-(--accent) whitespace-pre-line">
+              Ist-Soll-Konzepte, praxisnahe <br />
+              Lösungen, Fördermittel
             </div>
           </div>
           <div
@@ -204,8 +208,10 @@ export default function Services() {
               Arbeitsalltag für maximale Effizienz sorgen – stabil angebunden an
               gängige ERP-Systeme.
             </div>
-            <div className="mt-auto text-[14px] font-bold leading-normal tracking-[0.02em] text-(--accent)">
-              Barcode statt Papier. Echtzeit statt Vermuten.
+            <div className="text-center box-border text-sm font-bold tracking-[0.02em] text-(--accent) leading-normal whitespace-pre-line mt-auto m-0 p-0">
+              Barcode statt Papier.
+              <br />
+              Echtzeit statt Vermuten.
             </div>
           </div>
         </div>

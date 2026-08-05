@@ -48,7 +48,7 @@ export default function OurApproach() {
             </p>
           </div>
           <div className="flex items-start py-6">
-            <div className="flex h-12 w-14.5 items-center justify-center rounded-l-3xl bg-(--primary) pr-1.5 pl-2.5 text-[19px] font-bold text-white ">
+            <div className="flex-[0_0_auto] min-w-14.5 h-12 bg-(--primary) text-white flex items-center justify-center font-bold text-[19px] pl-2.5 pr-1.5 py-0 rounded-[24px_0_0_24px]">
               04
             </div>
             <span className="ml-2.5 mr-4 mt-5.75 h-0.5 w-6.5 bg-(--primary)"></span>
