@@ -33,9 +33,9 @@ export default function RootLayout({
       lang="de"
       className={`${barlow.variable} ${mono.variable} h-full antialiased`}
     >
-      <body className="overflow-x-hidden">
+      <body>
         <Header />
-        <ServiceTab/>
+        <ServiceTab />
         {children}
         <Footer />
       </body>
