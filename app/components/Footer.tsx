@@ -1,9 +1,7 @@
-import styles from "./Footer.module.css";
-
 export default function Footer() {
   return (
-    <footer className="w-full bg-(--primary) pt-18.5 pb-8.5 text-white/70">
-      <div className="mx-auto w-[92%] max-w-300">
+    <footer className="bg-(--primary) pt-18.5 pb-8.5 text-white/70 block isolate box-border">
+      <div className="mx-auto max-w-310 px-10">
         <div className="grid grid-cols-1 gap-10 min-[560px]:grid-cols-2 min-[900px]:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
           <div>
             <div className="mb-4 text-[20px] font-bold tracking-[0.02em]">
@@ -90,16 +88,19 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-13 flex flex-wrap items-center justify-between gap-4 border-t border-white/15 pt-6.5 text-[12px] text-white/50">
-          <div>© 2026 Softwareproduktiv GmbH // Alle Rechte vorbehalten.</div>
-          <div className="flex flex-wrap items-center gap-2">
+          <div>
+            © 2026 Softwareproduktiv GmbH &nbsp;//&nbsp; Alle Rechte
+            vorbehalten.
+          </div>
+          <div className="flex flex-wrap items-center gap-1.5 text-[12px] leading-normal">
             <a className="transition-colors hover:text-white" href="#">
               Impressum
             </a>
-            <span> // </span>
+            <span>//</span>
             <a className="transition-colors hover:text-white" href="#">
               Datenschutz
             </a>
-            <span> // </span>
+            <span>//</span>
             <a className="transition-colors hover:text-white" href="#">
               AGB
             </a>

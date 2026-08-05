@@ -7,12 +7,12 @@ import logo2 from "@/public/projectphotos/logo2.png";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-(--divider) bg-[rgba(245,242,240,.85)] backdrop-blur-[12px]">
-      <div className="mx-auto flex h-[72px] max-w-[1240px] items-center justify-between gap-5 px-6 lg:px-10">
+    <header className="sticky top-0 z-50 w-full border-b border-b-(--divider) bg-[rgba(245,242,240,.85)] backdrop-blur-md backdrop-saturate-180">
+      <div className="mx-auto flex h-18 max-w-310 items-center justify-between gap-5 px-6 lg:px-10">
         <a
           href="#top"
           aria-label="Softwareproduktiv"
-          className="flex items-center gap-[13px]"
+          className="flex items-center gap-3.25"
           onClick={() => setIsOpen(false)}
         >
           <Image
@@ -20,14 +20,14 @@ export default function Header() {
             alt="Softwareproduktiv"
             width={38}
             height={30}
-            className="block h-[30px] w-auto"
+            className="block h-7.5 w-auto"
           />
           <Image
             src={logo2}
             alt="Softwareproduktiv"
             width={204}
             height={14}
-            className="hidden h-[14px] w-auto min-[521px]:block"
+            className="hidden h-3.5 w-auto min-[521px]:block"
           />
         </a>
         <div className="flex items-center gap-10">
@@ -56,11 +56,11 @@ export default function Header() {
             aria-label="Menü"
             aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
-            className="flex cursor-pointer flex-col gap-[5px] border-0 bg-transparent p-2 min-[861px]:hidden"
+            className="flex cursor-pointer flex-col gap-1.25 border-0 bg-transparent p-2 min-[861px]:hidden"
           >
-            <span className="block h-[2px] w-6 bg-(--primary)" />
-            <span className="block h-[2px] w-6 bg-(--primary)" />
-            <span className="block h-[2px] w-6 bg-(--primary)" />
+            <span className="block h-0.5 w-6 bg-(--primary)" />
+            <span className="block h-0.5 w-6 bg-(--primary)" />
+            <span className="block h-0.5 w-6 bg-(--primary)" />
           </button>
         </div>
       </div>
@@ -96,4 +96,3 @@ export default function Header() {
     </header>
   );
 }
-
