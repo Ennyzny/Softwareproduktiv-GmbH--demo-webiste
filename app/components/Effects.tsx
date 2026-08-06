@@ -15,7 +15,7 @@ export default function Effects() {
           Klare Abläufe. Bessere Entscheidungen.
         </p>
         <div className="mt-12 grid grid-cols-1 gap-6.5 text-center min-[700px]:grid-cols-3">
-          <div className="isolate box-border border bg-[#f5f2f0] px-6 py-10 min-[700px]:px-7.5 min-[700px]:pb-11">
+          <div className="block isolate box-border border bg-[#f5f2f0] px-7.5 py-10 min-[700px]:px-7.5 min-[700px]:pb-11 text-center">
             <div className="text-(length:--fs-display) font-bold leading-none tracking-[-0.01em] text-[#4c2f69]">
               – 40 %
             </div>
@@ -23,12 +23,12 @@ export default function Effects() {
               Fehlerrate im Betriebsalltag
             </div>
             <p className="mx-auto mb-6.5 max-w-[78ch] text-(length:--fs-small) font-medium leading-[1.7] text-(--ink)">
-              Durch automatisierte Kontrollschleifen und klare Pflichtfelder
-              bei der Baustellendokumentation.
+              Durch automatisierte Kontrollschleifen und klare Pflichtfelder bei
+              der Baustellendokumentation.
             </p>
           </div>
-          <div className="isolate box-border border bg-[#f5f2f0] px-6 py-10 min-[700px]:px-7.5 min-[700px]:pb-11">
-            <div className="text-(length:--fs-display) font-bold leading-none tracking-[-0.01em] text-[#4c2f69]">
+          <div className="isolate box-border border bg-[#f5f2f0] px-7.5 py-10 min-[700px]:px-7.5 min-[700px]:pb-11 text-center">
+            <div className="text-(length:--fs-display) font-bold leading-none tracking-[-0.01em] text-[#4c2f69] ">
               + 12 h
             </div>
             <div className="mt-5.5 mb-7.5 text-[16px] font-bold leading-normal text-[#4c2f69]">
@@ -39,8 +39,8 @@ export default function Effects() {
               Papier-Aufmaßen ins System.
             </p>
           </div>
-          <div className="isolate box-border border bg-[#f5f2f0] px-6 py-10 min-[700px]:px-7.5 min-[700px]:pb-11">
-            <div className="text-(length:--fs-display) font-bold leading-none tracking-[-0.01em] text-[#4c2f69]">
+          <div className="isolate box-border border bg-[#f5f2f0] px-7.5 py-10 min-[700px]:px-7.5 min-[700px]:pb-11 text-center">
+            <div className="text-(length:--fs-display) font-bold leading-none tracking-[-0.01em] text-[#4c2f69] ">
               100 %
             </div>
             <div className="mt-5.5 mb-7.5 text-[16px] font-bold leading-normal text-[#4c2f69]">
@@ -56,4 +56,3 @@ export default function Effects() {
     </section>
   );
 }
-

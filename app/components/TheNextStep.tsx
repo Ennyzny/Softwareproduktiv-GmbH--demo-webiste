@@ -17,7 +17,7 @@ export default function TheNextStep() {
           In einem unverbindlichen, 15-minütigen Gespräch analysieren wir deine
           aktuellen Datensilos und skizzieren eine konkrete Lösung.
         </p>
-        <button className="inline-flex items-center cursor-pointer gap-2.5 bg-(--primary) px-6.5 py-3.75 text-[13px] font-bold uppercase tracking-[0.08em] text-white transition-all duration-200 hover:-translate-y-px hover:bg-(--violet)">
+        <button className="box-border inline-flex items-center gap-2.5 font-bold text-[13px] bg-(--primary) tracking-[0.08em] uppercase cursor-pointer text-white transition-[background] duration-[0.25s,transform] delay-150 m-0 px-6.5 py-3.75 border-0">
           Erstgespräch vereinbaren
           <svg
             viewBox="0 0 24 24"

@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       <section
         id="hero"
-        className="text-(--ink) leading-normal box-border relative h-screen min-h-160 flex flex-col items-center justify-center border-b-(--divider) overflow-hidden m-0 p-0 border-solid"
+        className="text-(--ink) leading-normal box-border relative h-screen min-h-160 flex flex-col items-center justify-center border-b border-b-(--divider) overflow-hidden m-0 p-0 border-solid"
       >
         <canvas></canvas>
 

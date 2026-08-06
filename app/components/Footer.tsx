@@ -92,15 +92,15 @@ export default function Footer() {
             © 2026 Softwareproduktiv GmbH &nbsp;//&nbsp; Alle Rechte
             vorbehalten.
           </div>
-          <div className="flex flex-wrap items-center gap-1.5 text-[12px] leading-normal">
+          <div>
             <a className="transition-colors hover:text-white" href="#">
               Impressum
             </a>
-            <span>//</span>
+            &nbsp; // &nbsp;
             <a className="transition-colors hover:text-white" href="#">
               Datenschutz
             </a>
-            <span>//</span>
+            &nbsp; // &nbsp;
             <a className="transition-colors hover:text-white" href="#">
               AGB
             </a>
