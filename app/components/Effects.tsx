@@ -14,8 +14,8 @@ export default function Effects() {
         <p className="mx-auto mb-0 max-w-[78ch] text-(length:--fs-small) font-medium leading-[1.65] text-white/75">
           Klare Abläufe. Bessere Entscheidungen.
         </p>
-        <div className="mt-12 grid grid-cols-1 gap-6.5 text-center min-[700px]:grid-cols-3">
-          <div className="block isolate box-border border bg-[#f5f2f0] px-7.5 py-10 min-[700px]:px-7.5 min-[700px]:pb-11 text-center">
+        <div className="mt-12 grid grid-cols-1 gap-6.5 text-center md:grid-cols-3">
+          <div className="isolate box-border border bg-[#f5f2f0] px-7.5 pt-10 pb-11 text-center">
             <div className="text-(length:--fs-display) font-bold leading-none tracking-[-0.01em] text-[#4c2f69]">
               – 40 %
             </div>
