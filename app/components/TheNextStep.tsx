@@ -43,7 +43,7 @@ export default function TheNextStep() {
             Ohne Verpflichtung
           </span>
           <span className="relative px-4 before:content-['|'] before:absolute before:-left-0.5 before:text-(--divider)">
-            100 % praxisbezogen nesto samo da je promjena
+            100 % praxisbezogen
           </span>
         </div>
       </div>
