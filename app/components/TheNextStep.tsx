@@ -7,7 +7,7 @@ export default function TheNextStep() {
   return (
     <section
       id="der-nächste-schritt"
-      className="text-(--ink) leading-normal box-border bg-white border-t-(--divider) m-0 px-0 py-30 border-t border-solid"
+      className="text-(--ink) leading-normal box-border bg-white border-t-(--divider) m-0 px-0 py-30 max-md:py-17.5 border-t border-solid"
     >
       <div className="mx-auto max-w-310 flex flex-col items-center px-5 text-center sm:px-10">
         <span className="mb-5 text-[13px] font-bold uppercase tracking-[0.14em] text-(--accent) inline-block leading-normal">
@@ -24,7 +24,7 @@ export default function TheNextStep() {
         </p>
         <button
           onClick={openModal}
-          className="box-border inline-flex items-center gap-2.5 font-bold text-[13px] bg-(--primary) tracking-[0.08em] uppercase cursor-pointer text-white transition-[background] duration-[0.25s,transform] delay-150 m-0 px-6.5 py-3.75 border-0 hover:bg-(--violet) hover:-translate-y-px"
+          className="box-border inline-flex items-center gap-2.5 font-bold text-[13px] bg-(--primary) tracking-[0.08em] uppercase cursor-pointer text-white [transition:background_.25s,transform_.15s] m-0 px-6.5 py-3.75 border-0 hover:bg-(--violet) hover:-translate-y-px"
         >
           Erstgespräch vereinbaren
           <svg

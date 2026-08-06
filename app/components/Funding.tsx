@@ -28,9 +28,8 @@ export default function Funding() {
           </div>
           <button
             onClick={openModal}
-            className="inline-flex items-center gap-2.5 bg-(--primary) px-6.5 py-3.75 text-[13px] cursor-pointer font-bold uppercase tracking-[.08em] text-white transition-all duration-200 hover:-translate-y-px hover:bg-(--violet)"
-          >
-            Termin vereinbaren
+            className="inline-flex items-center gap-2.5 border-0 bg-(--primary) px-6.5 py-3.75 font-sans text-[13px] font-bold uppercase tracking-[.08em] text-white cursor-pointer [transition:background_.25s,transform_.15s] hover:-translate-y-px hover:bg-(--violet)">
+              Termin vereinbaren
           </button>
         </div>
       </div>
