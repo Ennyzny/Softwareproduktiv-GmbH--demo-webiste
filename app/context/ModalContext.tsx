@@ -1,5 +1,4 @@
 "use client";
-
 import { createContext, useContext, useState, ReactNode } from "react";
 
 type Step = 1 | 2 | 3;

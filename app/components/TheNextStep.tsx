@@ -1,5 +1,4 @@
 "use client";
-
 import { useModal } from "@/app/context/ModalContext";
 
 export default function TheNextStep() {
