@@ -66,28 +66,28 @@ export default function Header() {
       </div>
       <div
         className={`overflow-hidden bg-[rgba(245,242,240,.97)] transition-all duration-200 min-[861px]:hidden ${
-          isOpen ? "max-h-60 border-t border-(--divider)" : "max-h-0"
+          isOpen ? "max-h-60 border-t border-t-(--divider)" : "max-h-0"
         }`}
       >
         <nav className="flex flex-col px-6">
           <a
             href="#"
             onClick={() => setIsOpen(false)}
-            className="border-b border-(--divider) py-4 text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink)"
+            className="py-2.5 leading-normal box-border text-inherit no-underline text-sm font-bold tracking-widest uppercase m-0 p-0"
           >
             Karriere
           </a>
           <a
             href="#leistungen"
             onClick={() => setIsOpen(false)}
-            className="border-b border-(--divider) py-4 text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink)"
+            className="py-2.5 leading-normal box-border text-inherit no-underline text-sm font-bold tracking-widest uppercase m-0 p-0"
           >
             Leistungen
           </a>
           <a
             href="#"
             onClick={() => setIsOpen(false)}
-            className="py-4 text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink)"
+            className="py-2.5 leading-normal box-border text-inherit no-underline text-sm font-bold tracking-widest uppercase m-0 p-0"
           >
             Anfrage
           </a>

@@ -2,7 +2,7 @@ export default function TheNextStep() {
   return (
     <section
       id="der-nächste-schritt"
-      className="border-t border-(--divider) bg-white py-17.5 md:py-30 box-border block isolate"
+      className="text-(--ink) leading-normal box-border bg-white border-t-(--divider) m-0 px-0 py-30 border-t border-solid"
     >
       <div className="mx-auto max-w-310 flex flex-col items-center px-5 text-center sm:px-10">
         <span className="mb-5 text-[13px] font-bold uppercase tracking-[0.14em] text-(--accent) inline-block leading-normal">
@@ -17,7 +17,7 @@ export default function TheNextStep() {
           In einem unverbindlichen, 15-minütigen Gespräch analysieren wir deine
           aktuellen Datensilos und skizzieren eine konkrete Lösung.
         </p>
-        <button className="box-border inline-flex items-center gap-2.5 font-bold text-[13px] bg-(--primary) tracking-[0.08em] uppercase cursor-pointer text-white transition-[background] duration-[0.25s,transform] delay-150 m-0 px-6.5 py-3.75 border-0">
+        <button className="box-border inline-flex items-center gap-2.5 font-bold text-[13px] bg-(--primary) tracking-[0.08em] uppercase cursor-pointer text-white transition-[background] duration-[0.25s,transform] delay-150 m-0 px-6.5 py-3.25 border-0">
           Erstgespräch vereinbaren
           <svg
             viewBox="0 0 24 24"
