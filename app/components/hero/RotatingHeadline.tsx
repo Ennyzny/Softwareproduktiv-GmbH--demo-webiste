@@ -49,7 +49,7 @@ export default function RotatingHeadline() {
     }, WIDTH_DURATION);
     return () => clearTimeout(timeout);
   }, [wrapWidth]);
-
+  
   useEffect(() => {
     if (!measureRef.current) return;
     const newWidth = measureRef.current.offsetWidth;
@@ -61,7 +61,7 @@ export default function RotatingHeadline() {
   }, [wordIndex]);
 
   return (
-    <div className="relative h-[clamp(44px,5.6vw,80px)] flex items-center justify-center">
+    <div className="relative h-[clamp(44px,5.6vw,80px)] flex items-center justify-center max-w-[94vw] mx-auto">
       <div
         className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-[opacity,transform] duration-[550ms] ease-out will-change-[opacity,transform] ${
           showWordmark
@@ -69,7 +69,7 @@ export default function RotatingHeadline() {
             : "opacity-0 translate-y-2.5 scale-[0.985]"
         }`}
       >
-        <div className="flex items-baseline whitespace-nowrap uppercase text-[clamp(26px,4.6vw,64px)] font-normal tracking-[0.02em] text-(--soft) leading-[1.15]">
+        <div className="flex items-baseline whitespace-nowrap uppercase text-[19px] max-[560px]:text-[19px] sm:text-[clamp(26px,4.6vw,64px)] font-normal tracking-[0.02em] text-(--soft) leading-[1.15]">
           <span className="text-(--soft)">software</span>
           <span className="text-(--primary) font-bold">produktiv</span>
         </div>
@@ -82,7 +82,7 @@ export default function RotatingHeadline() {
             : "opacity-0 translate-y-2.5 scale-[0.985]"
         }`}
       >
-        <div className="flex items-baseline whitespace-nowrap uppercase text-[clamp(26px,4.6vw,64px)] font-normal tracking-[0.02em] text-(--soft) leading-[1.15]">
+        <div className="flex items-baseline whitespace-nowrap uppercase text-[19px] max-[560px]:text-[19px] sm:text-[clamp(26px,4.6vw,64px)] font-normal tracking-[0.02em] text-(--soft) leading-[1.15]">
           <span className="text-(--soft)">innovativ</span>
 
           <span

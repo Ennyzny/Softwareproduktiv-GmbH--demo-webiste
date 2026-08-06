@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 
 export default function AnimatedBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const mouseRef = useRef<{ x: number; y: number } | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -50,6 +51,7 @@ export default function AnimatedBackground() {
         if (p.y < 0 || p.y > height) p.vy *= -1;
       }
 
+      // linije čestica međusobno
       const maxDist = 130;
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
@@ -68,6 +70,24 @@ export default function AnimatedBackground() {
         }
       }
 
+      // cursor lines
+      const mouse = mouseRef.current;
+      if (mouse) {
+        const mouseMaxDist = 180;
+        for (const p of particles) {
+          const dist = Math.hypot(p.x - mouse.x, p.y - mouse.y);
+          if (dist < mouseMaxDist) {
+            ctx!.strokeStyle = primary;
+            ctx!.globalAlpha = (1 - dist / mouseMaxDist) * 0.35;
+            ctx!.lineWidth = 1;
+            ctx!.beginPath();
+            ctx!.moveTo(p.x, p.y);
+            ctx!.lineTo(mouse.x, mouse.y);
+            ctx!.stroke();
+          }
+        }
+      }
+
       ctx!.globalAlpha = 0.5;
       ctx!.fillStyle = primary;
       for (const p of particles) {
@@ -80,22 +100,39 @@ export default function AnimatedBackground() {
       raf = requestAnimationFrame(step);
     }
 
+    function handleMouseMove(e: MouseEvent) {
+      const rect = canvas!.getBoundingClientRect();
+      mouseRef.current = {
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top,
+      };
+    }
+
+    function handleMouseLeave() {
+      mouseRef.current = null;
+    }
+
     resize();
     step();
 
     const ro = new ResizeObserver(resize);
     ro.observe(canvas);
 
+    canvas.addEventListener("mousemove", handleMouseMove);
+    canvas.addEventListener("mouseleave", handleMouseLeave);
+
     return () => {
       cancelAnimationFrame(raf);
       ro.disconnect();
+      canvas.removeEventListener("mousemove", handleMouseMove);
+      canvas.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-none z-0"
+      className="absolute inset-0 w-full h-full pointer-events-auto z-0"
     />
   );
 }
