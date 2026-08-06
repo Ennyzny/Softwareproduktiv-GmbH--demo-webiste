@@ -1,14 +1,22 @@
 "use client";
 import { useState } from "react";
+import { useModal } from "@/app/context/ModalContext";
 import Image from "next/image";
 import logo from "@/public/projectphotos/logo.png";
 import logo2 from "@/public/projectphotos/logo2.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const { openModal } = useModal();
+
+  const handleModalClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    openModal();
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-b-(--divider) bg-[rgba(245,242,240,.85)] backdrop-blur-md backdrop-saturate-180">
-      <div className="text-(--ink) leading-normal box-border max-w-(--maxw) not-last:flex items-center justify-between h-18 gap-5 mx-auto my-0 px-5 md:px-10 py-0">
+      <div className="text-(--ink) leading-normal box-border max-w-(--maxw) flex items-center justify-between h-18 gap-5 mx-auto my-0 px-5 md:px-10 py-0">
         <a
           href="#top"
           aria-label="Softwareproduktiv"
@@ -27,33 +35,35 @@ export default function Header() {
             alt="Softwareproduktiv"
             width={204}
             height={14}
-            className="hidden h-3.5  min-[521px]:block"
+            className="hidden h-3.5 min-[521px]:block"
           />
         </a>
         <div className="flex items-center gap-10">
           <nav className="hidden items-center gap-10 min-[861px]:flex">
-            <a
-              href="#"
-              className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet)"
+            <button
+              type="button"
+              onClick={openModal}
+              className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet) bg-transparent border-0 cursor-pointer p-0"
             >
               Karriere
-            </a>
+            </button>
             <a
               href="#leistungen"
               className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet)"
             >
               Leistungen
             </a>
-            <a
-              href="#"
-              className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet)"
+            <button
+              type="button"
+              onClick={openModal}
+              className="text-[13px] font-bold uppercase tracking-[0.12em] text-(--ink) transition-colors duration-200 hover:text-(--violet) bg-transparent border-0 cursor-pointer p-0"
             >
               Anfrage
-            </a>
+            </button>
           </nav>
           <button
             type="button"
-            aria-label="Menü"
+            aria-label="Menu"
             aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
             className="flex cursor-pointer flex-col gap-1.25 border-0 bg-transparent p-2 min-[861px]:hidden"
@@ -69,25 +79,31 @@ export default function Header() {
           isOpen ? "max-h-60 border-t border-t-(--divider)" : "max-h-0"
         }`}
       >
-        <nav className="flex flex-col px-6">
+        <nav className="flex flex-col gap-[18px] px-6 py-5">
           <a
             href="#"
-            onClick={() => setIsOpen(false)}
-            className="py-2.5 leading-normal box-border text-inherit no-underline text-sm font-bold tracking-widest uppercase m-0 p-0"
+            onClick={(e) => {
+              handleModalClick(e);
+              setIsOpen(false);
+            }}
+            className="leading-normal box-border text-inherit no-underline text-sm font-bold tracking-[0.1em] uppercase m-0 p-0"
           >
             Karriere
           </a>
           <a
             href="#leistungen"
             onClick={() => setIsOpen(false)}
-            className="py-2.5 leading-normal box-border text-inherit no-underline text-sm font-bold tracking-widest uppercase m-0 p-0"
+            className="leading-normal box-border text-inherit no-underline text-sm font-bold tracking-[0.1em] uppercase m-0 p-0"
           >
             Leistungen
           </a>
           <a
             href="#"
-            onClick={() => setIsOpen(false)}
-            className="py-2.5 leading-normal box-border text-inherit no-underline text-sm font-bold tracking-widest uppercase m-0 p-0"
+            onClick={(e) => {
+              handleModalClick(e);
+              setIsOpen(false);
+            }}
+            className="leading-normal box-border text-inherit no-underline text-sm font-bold tracking-[0.1em] uppercase m-0 p-0"
           >
             Anfrage
           </a>

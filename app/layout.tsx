@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Barlow, IBM_Plex_Mono } from "next/font/google";
 import ServiceTab from "./components/ServiceTab";
+import { ModalProvider } from "./context/ModalContext";
+import SystemCheck from "./components/SystemCheckModal";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -34,10 +36,13 @@ export default function RootLayout({
       className={`${barlow.variable} ${mono.variable} h-full antialiased`}
     >
       <body>
-        <Header />
-        <ServiceTab />
-        {children}
-        <Footer />
+        <ModalProvider>
+          <SystemCheck />
+          <Header />
+          <ServiceTab />
+          {children}
+          <Footer />
+        </ModalProvider>
       </body>
     </html>
   );

@@ -1,4 +1,10 @@
+"use client";
+
+import { useModal } from "@/app/context/ModalContext";
+
 export default function TheNextStep() {
+  const { openModal } = useModal();
+
   return (
     <section
       id="der-nächste-schritt"
@@ -17,7 +23,10 @@ export default function TheNextStep() {
           In einem unverbindlichen, 15-minütigen Gespräch analysieren wir deine
           aktuellen Datensilos und skizzieren eine konkrete Lösung.
         </p>
-        <button className="box-border inline-flex items-center gap-2.5 font-bold text-[13px] bg-(--primary) tracking-[0.08em] uppercase cursor-pointer text-white transition-[background] duration-[0.25s,transform] delay-150 m-0 px-6.5 py-3.25 border-0">
+        <button
+          onClick={openModal}
+          className="box-border inline-flex items-center gap-2.5 font-bold text-[13px] bg-(--primary) tracking-[0.08em] uppercase cursor-pointer text-white transition-[background] duration-[0.25s,transform] delay-150 m-0 px-6.5 py-3.25 border-0"
+        >
           Erstgespräch vereinbaren
           <svg
             viewBox="0 0 24 24"

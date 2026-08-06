@@ -1,4 +1,10 @@
+"use client";
+
+import { useModal } from "@/app/context/ModalContext";
+
 export default function Funding() {
+  const { openModal } = useModal();
+
   return (
     <section
       id="fördermittel"
@@ -21,7 +27,10 @@ export default function Funding() {
               Grundlage für Investitionsentscheidungen zu schaffen.
             </p>
           </div>
-          <button className="inline-flex items-center gap-2.5 bg-(--primary) px-6.5 py-3.75 text-[13px] cursor-pointer font-bold uppercase tracking-[.08em] text-white transition-all duration-200 hover:-translate-y-px hover:bg-(--violet)">
+          <button
+            onClick={openModal}
+            className="inline-flex items-center gap-2.5 bg-(--primary) px-6.5 py-3.75 text-[13px] cursor-pointer font-bold uppercase tracking-[.08em] text-white transition-all duration-200 hover:-translate-y-px hover:bg-(--violet)"
+          >
             Termin vereinbaren
           </button>
         </div>

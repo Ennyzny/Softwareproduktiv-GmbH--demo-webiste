@@ -9,12 +9,10 @@ import Funding from "./components/Funding";
 import Effects from "./components/Effects";
 import OurPrinciple from "./components/OurPrinciple";
 import TheNextStep from "./components/TheNextStep";
-import SystemCheck from "./components/SystemCheckModal";
 
 export default function Home() {
   return (
     <>
-      {/* <SystemCheck /> */}
       <Hero />
       <KeyMessage />
       <Challenges />
