@@ -7,24 +7,22 @@ export default function TheNextStep() {
   return (
     <section
       id="der-nächste-schritt"
-      className="text-(--ink) leading-normal box-border bg-white border-t-(--divider) m-0 px-0 py-30 max-md:py-17.5 border-t border-solid"
+      className="text-(--ink) leading-normal bg-white border-t border-solid border-t-(--divider) py-30 max-md:py-17.5"
     >
-      <div className="mx-auto max-w-310 flex flex-col items-center px-5 text-center sm:px-10">
-        <span className="mb-5 text-[13px] font-bold uppercase tracking-[0.14em] text-(--accent) inline-block leading-normal">
+      <div className="mx-auto max-w-310 px-5 sm:px-10 text-center reveal">
+        <span className="mb-5 inline-block text-[13px] font-bold uppercase tracking-[0.14em] text-(--accent)">
           // Der nächste Schritt
         </span>
-        <h2 className="mb-5.5 text-center text-(length:--fs-display) font-medium leading-[1.1] tracking-[-0.01em] text-(--soft)">
-          Lass uns{" "}
-          <span className="font-bold text-(--primary)">Dein System</span>{" "}
-          anschauen.
+        <h2 className="mb-5.5 text-(length:--fs-display) font-medium leading-[1.1] tracking-[-0.01em] text-(--soft)">
+          Lass uns <span className="font-bold text-(--primary)">Dein System</span> anschauen.
         </h2>
-        <p className="mb-8.5 max-w-[60ch] text-[17px] font-medium leading-[1.65] text-(--muted)">
+        <p className="mx-auto mb-8.5 max-w-[60ch] text-[17px] font-medium leading-[1.65] text-(--muted)">
           In einem unverbindlichen, 15-minütigen Gespräch analysieren wir deine
           aktuellen Datensilos und skizzieren eine konkrete Lösung.
         </p>
         <button
           onClick={openModal}
-          className="box-border inline-flex items-center gap-2.5 font-bold text-[13px] bg-(--primary) tracking-[0.08em] uppercase cursor-pointer text-white [transition:background_.25s,transform_.15s] m-0 px-6.5 py-3.75 border-0 hover:bg-(--violet) hover:-translate-y-px"
+          className="inline-flex items-center gap-2.5 border-0 bg-(--primary) px-6.5 py-3.75 text-[13px] font-bold uppercase tracking-[0.08em] text-white cursor-pointer [transition:background_.25s,transform_.15s] hover:bg-(--violet) hover:-translate-y-px"
         >
           Erstgespräch vereinbaren
           <svg
@@ -37,12 +35,12 @@ export default function TheNextStep() {
             <path d="M5 12h14M13 6l6 6-6 6" />
           </svg>
         </button>
-        <div className="mt-6.5 flex flex-wrap justify-center text-[14px] font-semibold text-(--muted) box-border">
+        <div className="mt-6.5 flex flex-wrap justify-center text-[14px] font-semibold text-(--muted)">
           <span className="relative px-4">Kostenlos</span>
-          <span className="relative px-4 before:content-['|'] before:absolute before:-left-0.5 before:text-(--divider)">
+          <span className="relative px-4 before:absolute before:-left-0.5 before:content-['|'] before:text-(--divider)">
             Ohne Verpflichtung
           </span>
-          <span className="relative px-4 before:content-['|'] before:absolute before:-left-0.5 before:text-(--divider)">
+          <span className="relative px-4 before:absolute before:-left-0.5 before:content-['|'] before:text-(--divider)">
             100 % praxisbezogen
           </span>
         </div>
