@@ -12,10 +12,10 @@ const ROTATING_WORDS = [
   "benutzerfreundlich",
 ];
 
-const WORDMARK_DURATION = 3600; 
-const WORD_DURATION = 2200;     
-const WIDTH_DURATION = 380;     
-const FADE_DURATION = 240;      
+const WORDMARK_DURATION = 3600;
+const WORD_DURATION = 2200;
+const WIDTH_DURATION = 380;
+const FADE_DURATION = 240;
 
 export default function RotatingHeadline() {
   const measureRef = useRef<HTMLSpanElement>(null);
@@ -49,7 +49,7 @@ export default function RotatingHeadline() {
     }, WIDTH_DURATION);
     return () => clearTimeout(timeout);
   }, [wrapWidth]);
-  
+
   useEffect(() => {
     if (!measureRef.current) return;
     const newWidth = measureRef.current.offsetWidth;
@@ -63,7 +63,7 @@ export default function RotatingHeadline() {
   return (
     <div className="relative h-[clamp(44px,5.6vw,80px)] flex items-center justify-center max-w-[94vw] mx-auto">
       <div
-        className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-[opacity,transform] duration-[550ms] ease-out will-change-[opacity,transform] ${
+        className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-[opacity,transform] duration-550 ease-out will-change-[opacity,transform] ${
           showWordmark
             ? "opacity-100 translate-y-0 scale-100"
             : "opacity-0 translate-y-2.5 scale-[0.985]"
@@ -76,7 +76,7 @@ export default function RotatingHeadline() {
       </div>
 
       <div
-        className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-[opacity,transform] duration-[550ms] ease-out will-change-[opacity,transform] ${
+        className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-[opacity,transform] duration-550 ease-out will-change-[opacity,transform] ${
           !showWordmark
             ? "opacity-100 translate-y-0 scale-100"
             : "opacity-0 translate-y-2.5 scale-[0.985]"
@@ -86,11 +86,11 @@ export default function RotatingHeadline() {
           <span className="text-(--soft)">innovativ</span>
 
           <span
-            className="relative inline-flex justify-center overflow-hidden transition-[width] duration-[380ms] ease-[cubic-bezier(.3,1.12,.35,1)]"
+            className="relative inline-flex justify-center overflow-hidden transition-[width] duration-380 ease-[cubic-bezier(.3,1.12,.35,1)]"
             style={{ width: wrapWidth }}
           >
             <span
-              className={`text-(--primary) font-bold tracking-[0.02em] whitespace-nowrap inline-block transition-opacity duration-[240ms] ease-in-out ${
+              className={`text-(--primary) font-bold tracking-[0.02em] whitespace-nowrap inline-block transition-opacity duration-240 ease-in-out ${
                 wordVisible ? "opacity-100" : "opacity-0"
               }`}
             >

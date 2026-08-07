@@ -14,7 +14,9 @@ export default function TheNextStep() {
           // Der nächste Schritt
         </span>
         <h2 className="mb-5.5 text-(length:--fs-display) font-medium leading-[1.1] tracking-[-0.01em] text-(--soft)">
-          Lass uns <span className="font-bold text-(--primary)">Dein System</span> anschauen.
+          Lass uns{" "}
+          <span className="font-bold text-(--primary)">Dein System</span>{" "}
+          anschauen.
         </h2>
         <p className="mx-auto mb-8.5 max-w-[60ch] text-[17px] font-medium leading-[1.65] text-(--muted)">
           In einem unverbindlichen, 15-minütigen Gespräch analysieren wir deine
@@ -22,7 +24,7 @@ export default function TheNextStep() {
         </p>
         <button
           onClick={openModal}
-          className="inline-flex items-center gap-2.5 border-0 bg-(--primary) px-6.5 py-3.75 text-[13px] leading-none font-bold uppercase tracking-[0.08em] text-white cursor-pointer [transition:background_.25s,transform_.15s] hover:bg-(--violet) hover:-translate-y-px"
+          className="inline-flex items-center gap-2.5 border-0 bg-(--primary) px-6.5 py-3.75 text-[13px] leading-px font-bold uppercase tracking-[0.08em] text-white cursor-pointer [transition:background_.25s,transform_.15s] hover:bg-(--violet) hover:-translate-y-px"
         >
           Erstgespräch vereinbaren
           <svg

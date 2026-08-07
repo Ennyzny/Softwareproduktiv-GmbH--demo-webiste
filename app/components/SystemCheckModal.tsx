@@ -72,7 +72,6 @@ export default function SystemCheck() {
       ></div>
 
       <div className="text-(--ink) leading-normal box-border relative z-2 w-full max-w-155 overflow-hidden shadow-[0_40px_90px_-20px_rgba(0,0,0,0.5)] animate-[pop_0.3s_cubic-bezier(.2,0.9,0.3,1.15)] max-h-[92vh] flex flex-col m-0 p-0 rounded-md">
-        {/* Head */}
         <div className="text-(--ink) leading-normal box-border border-b-(--divider) relative flex-[0_0_auto] m-0 px-7.5 py-6.5 border-b border-solid bg-white">
           <button
             onClick={handleClose}
@@ -89,9 +88,7 @@ export default function SystemCheck() {
               <path d="M18 6 6 18M6 6l12 12" />
             </svg>
           </button>
-          <div
-            className={`${mono} leading-normal box-border text-xs tracking-[0.16em] text-(--ink) uppercase flex items-center gap-2.25 mb-2.5 m-0 p-0`}
-          >
+          <div className="leading-normal box-border text-xs tracking-[0.16em] text-(--ink) uppercase flex items-center gap-2.25 mb-2.5 m-0 p-0">
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -103,7 +100,7 @@ export default function SystemCheck() {
               <rect x={9} y={9} width={6} height={6} rx={2} />
               <path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2" />
             </svg>
-            <span>System–Check Handwerk</span>
+            <span className={`${mono}`}>System–Check Handwerk</span>
           </div>
           <h3 className="box-border leading-[1.1] tracking-[-0.01em] text-2xl font-bold text-(--primary) m-0 p-0">
             {modalTitle}
@@ -204,7 +201,7 @@ export default function SystemCheck() {
                     className={inputBase}
                   />
                 </div>
-                <div>
+                <div className="mb-3.5">
                   <label
                     className={`${mono} leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0`}
                   >
@@ -224,7 +221,7 @@ export default function SystemCheck() {
               </div>
 
               <div className="grid grid-cols-[1fr_1fr] gap-4.5 mb-4.5">
-                <div>
+                <div className="mb-3.5">
                   <label
                     className={`${mono} leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0`}
                   >
