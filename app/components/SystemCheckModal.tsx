@@ -182,7 +182,7 @@ export default function SystemCheck() {
               <input type="hidden" name="Gewerk" value={gewerk || "—"} />
               <input type="hidden" name="Hürde" value={huerde || "—"} />
 
-              <div className="text-(--ink) leading-normal box-border grid grid-cols-[1fr_1fr] gap-4.5 mb-4.5 m-0 p-0">
+              <div className="text-(--ink) leading-normal box-border grid md:grid-cols-[1fr_1fr] gap-4.5 mb-4.5 m-0 p-0">
                 <div>
                   <label className="font-mono leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0">
                     Ansprechpartner Name *
@@ -211,7 +211,7 @@ export default function SystemCheck() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-[1fr_1fr] gap-4.5 mb-4.5">
+              <div className="grid md:grid-cols-[1fr_1fr] gap-4.5 mb-4.5">
                 <div className="mb-3.5">
                   <label className="font-mono leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0">
                     Telefonnummer (für Rückfragen) *

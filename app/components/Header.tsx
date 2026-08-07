@@ -18,7 +18,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-b-(--divider) bg-[rgba(245,242,240,.85)] backdrop-blur-md backdrop-saturate-180">
       <div className="text-(--ink) leading-normal box-border max-w-(--maxw) flex items-center justify-between h-18 gap-5 mx-auto my-0 px-5 md:px-10 py-0">
         <a
-          href="#top"
+          href="#hero"
           aria-label="Softwareproduktiv"
           className="flex items-center gap-3.25"
           onClick={() => setIsOpen(false)}
@@ -75,25 +75,25 @@ export default function Header() {
         </div>
       </div>
       <div
-        className={`overflow-hidden bg-[rgba(245,242,240,.97)] transition-all duration-200 min-[861px]:hidden ${
-          isOpen ? "max-h-60 border-t border-t-(--divider)" : "max-h-0"
+        className={`absolute w-full left-0 z-50 overflow-hidden bg-[rgba(245,242,240,.97)] transition-all duration-200 min-[861px]:hidden ${
+          isOpen ? "max-h-60 " : "max-h-0"
         }`}
       >
-        <nav className="flex flex-col gap-[18px] px-6 py-5">
+        <nav className="flex flex-col gap-4.5 px-6 py-5">
           <a
             href="#"
             onClick={(e) => {
               handleModalClick(e);
               setIsOpen(false);
             }}
-            className="leading-normal box-border text-inherit no-underline text-sm font-bold tracking-[0.1em] uppercase m-0 p-0"
+            className="leading-normal box-border text-inherit no-underline text-sm font-bold tracking-widest uppercase m-0 p-0"
           >
             Karriere
           </a>
           <a
             href="#leistungen"
             onClick={() => setIsOpen(false)}
-            className="leading-normal box-border text-inherit no-underline text-sm font-bold tracking-[0.1em] uppercase m-0 p-0"
+            className="leading-normal box-border text-inherit no-underline text-sm font-bold tracking-widest uppercase m-0 p-0"
           >
             Leistungen
           </a>
@@ -103,7 +103,7 @@ export default function Header() {
               handleModalClick(e);
               setIsOpen(false);
             }}
-            className="leading-normal box-border text-inherit no-underline text-sm font-bold tracking-[0.1em] uppercase m-0 p-0"
+            className="leading-normal box-border text-inherit no-underline text-sm font-bold tracking-widest uppercase m-0 p-0"
           >
             Anfrage
           </a>

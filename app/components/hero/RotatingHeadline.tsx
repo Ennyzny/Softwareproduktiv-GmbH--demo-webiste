@@ -12,10 +12,9 @@ const ROTATING_WORDS = [
   "benutzerfreundlich",
 ];
 
-const WORDMARK_DURATION = 3600;
-const WORD_DURATION = 2200;
-const WIDTH_DURATION = 380;
-const FADE_DURATION = 240;
+const WORDMARK_DURATION = 3400;
+const WORD_DURATION = 2800;
+const WIDTH_DURATION = 430;
 
 export default function RotatingHeadline() {
   const measureRef = useRef<HTMLSpanElement>(null);

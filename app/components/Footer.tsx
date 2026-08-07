@@ -1,7 +1,17 @@
+"use client";
+
+import { useModal } from "../context/ModalContext";
+
 export default function Footer() {
+  const { openModal } = useModal();
+
+  const handleModalClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    openModal();
+  };
   return (
     <footer className="bg-(--primary) pt-18.5 pb-8.5 text-white/70 block isolate box-border">
-      <div className="mx-auto max-w-310 px-10">
+      <div className="mx-auto max-w-160 md:max-w-310 px-5 md:px-10">
         <div className="grid grid-cols-1 gap-10 min-[560px]:grid-cols-2 min-[900px]:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
           <div>
             <div className="mb-4 text-[20px] font-bold tracking-[0.02em]">
@@ -20,22 +30,42 @@ export default function Footer() {
               Schnelleinstieg
             </h4>
             <nav className="text-[13px]">
-              {[
-                ["#top", "// Kernbotschaft"],
-                ["#herausforderungen", "// Herausforderungen"],
-                ["#leistungen", "// Unser Ansatz"],
-                ["#leistungen", "// Philosophie"],
-                ["#leistungen", "// Eigenentwicklungen"],
-                ["#leistungen", "// Leistungen"],
-              ].map(([href, text]) => (
-                <a
-                  key={text}
-                  href={href}
-                  className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
-                >
-                  {text}
-                </a>
-              ))}
+              <a
+                href="#top"
+                className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Kernbotschaft
+              </a>
+              <a
+                href="#herausforderungen"
+                className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Herausforderungen
+              </a>
+              <a
+                href="#leistungen"
+                className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Unser Ansatz
+              </a>
+              <a
+                href="#leistungen"
+                className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Philosophie
+              </a>
+              <a
+                href="#leistungen"
+                className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Eigenentwicklungen
+              </a>
+              <a
+                href="#leistungen"
+                className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Leistungen
+              </a>
             </nav>
           </div>
           <div>
@@ -43,22 +73,46 @@ export default function Footer() {
               Placeholder
             </h4>
             <nav className="mt-7.5 text-[13px]">
-              {[
-                ["#leistungen", "// Fördermittel"],
-                ["#leistungen", "// Effekte"],
-                ["#hero", "// Unser Grundsatz"],
-                ["#", "// Der nächste Schritt"],
-                ["#", "// Kontakt"],
-                ["#", "// Karriere"],
-              ].map(([href, text]) => (
-                <a
-                  key={text}
-                  href={href}
-                  className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
-                >
-                  {text}
-                </a>
-              ))}
+              <a
+                href="#leistungen"
+                className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Fördermittel
+              </a>
+              <a
+                href="#leistungen"
+                className="mb-2.25 block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Effekte
+              </a>
+              <button
+                type="button"
+                onClick={openModal}
+                className="mb-2.25 cursor-pointer block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Unser Grundsatz
+              </button>
+              <button
+                type="button"
+                onClick={openModal}
+                className="mb-2.25 cursor-pointer block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Der nächste Schritt
+              </button>
+              <button
+                type="button"
+                onClick={openModal}
+                className="mb-2.25 cursor-pointer block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Kontakt
+              </button>
+              <button
+                type="button"
+                onClick={openModal}
+                className="mb-2.25 cursor-pointer block text-white/60 transition-colors duration-200 hover:text-(--violet)"
+              >
+                // Karriere
+              </button>
             </nav>
           </div>
           <div>

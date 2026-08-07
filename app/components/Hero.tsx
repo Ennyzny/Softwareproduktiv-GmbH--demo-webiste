@@ -11,17 +11,16 @@ export default function Hero() {
     >
       <AnimatedBackground />
 
-      <div className="relative z-2 text-center">
+      <div className="relative z-2 text-center pointer-events-none">
         <Image
           className="h-[clamp(120px,15vw,175px)] w-auto object-contain block mt-0 mb-7.5 mx-auto max-w-full"
           src={logo}
           alt="Softwareproduktiv logo"
-          priority
         />
         <RotatingHeadline />
       </div>
 
-      <div className="absolute left-1/2 bottom-9.5 -translate-x-1/2 z-2 text-xs tracking-[0.18em] text-(--muted) uppercase">
+      <div className="block isolate box-border font-mono absolute left-1/2 bottom-9.5 -translate-x-1/2 z-2 text-xs tracking-[0.18em] text-(--muted) uppercase">
         // Entdecken ↓
       </div>
     </section>
