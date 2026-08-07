@@ -18,15 +18,6 @@ export default function SystemCheck() {
 
   if (!isOpen) return null;
 
-  const mono = "font-[family-name:var(--font-mono)]";
-
-  const optBase =
-    "box-border border bg-white border-(--divider) text-[15px] font-medium text-(--ink) cursor-pointer text-left transition-[border-color,background-color] duration-150 flex items-center justify-between gap-2.5 m-0 px-4.5 py-3.75 rounded-[5px] border-solid hover:border-(--accent)";
-  const optSel = "border-(--primary) bg-[#efe9f2] font-semibold";
-
-  const inputBase =
-    "box-border w-full bg-white text-[15px] border border-(--divider) text-(--ink) transition-[border-color,box-shadow] duration-200 m-0 px-3.5 py-3 rounded-[5px] border-solid focus:outline-none focus:border-(--violet) focus:shadow-[0_0_0_3px_rgba(168,85,247,.15)]";
-
   const gewerkOptions = [
     "Schreinerei / Tischlerei",
     "Sanitär / Heizung / Klima",
@@ -100,7 +91,7 @@ export default function SystemCheck() {
               <rect x={9} y={9} width={6} height={6} rx={2} />
               <path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2" />
             </svg>
-            <span className={`${mono}`}>System–Check Handwerk</span>
+            <span className="font-mono">System–Check Handwerk</span>
           </div>
           <h3 className="box-border leading-[1.1] tracking-[-0.01em] text-2xl font-bold text-(--primary) m-0 p-0">
             {modalTitle}
@@ -111,27 +102,27 @@ export default function SystemCheck() {
           {/* STEP 1 */}
           {step === 1 && (
             <div className="text-(--ink) leading-normal box-border block m-0 p-0">
-              <label
-                className={`${mono} leading-normal box-border text-[13px] font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-3.5 m-0 p-0`}
-              >
+              <label className="font-mono leading-normal box-border text-[13px] font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-3.5 m-0 p-0">
                 1. Welches Gewerk / welche Branche vertrittst du?
               </label>
-              <div className="text-(--ink) leading-normal box-border grid grid-cols-[1fr_1fr] gap-3 mb-7.5 m-0 p-0">
+              <div className="text-(--ink) leading-normal box-border grid grid-cols-[1fr_1fr] gap-3.5 mb-7.5 m-0 p-0">
                 {gewerkOptions.map((opt) => (
                   <button
                     key={opt}
                     type="button"
                     onClick={() => setGewerk(opt)}
-                    className={`${optBase} ${gewerk === opt ? optSel : ""}`}
+                    className={`box-border border bg-white border-(--divider) text-[15px] font-medium text-(--ink) cursor-pointer text-left transition-[border-color,background-color] duration-150 flex items-center justify-between gap-2.5 m-0 px-4.5 py-3.25 rounded-[5px] border-solid hover:border-(--accent) ${
+                      gewerk === opt
+                        ? "border-(--primary) bg-[#efe9f2] font-semibold"
+                        : ""
+                    }`}
                   >
                     {opt}
                   </button>
                 ))}
               </div>
 
-              <label
-                className={`${mono} leading-normal box-border text-[13px] font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-3.5 m-0 p-0`}
-              >
+              <label className="font-mono leading-normal box-border text-[13px] font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-3.5 m-0 p-0">
                 2. Was ist deine größte Hürde im Alltag?
               </label>
               <div className="text-(--ink) leading-normal box-border grid grid-cols-[1fr] gap-3 mb-7.5 m-0 p-0">
@@ -140,7 +131,11 @@ export default function SystemCheck() {
                     key={opt}
                     type="button"
                     onClick={() => setHuerde(opt)}
-                    className={`${optBase} ${huerde === opt ? optSel : ""}`}
+                    className={`box-border border bg-white border-(--divider) text-[15px] font-medium text-(--ink) cursor-pointer text-left transition-[border-color,background-color] duration-150 flex items-center justify-between gap-2.5 m-0 px-4.5 py-3.25 rounded-[5px] border-solid hover:border-(--accent) ${
+                      huerde === opt
+                        ? "border-(--primary) bg-[#efe9f2] font-semibold"
+                        : ""
+                    }`}
                   >
                     {opt}
                     <svg
@@ -161,7 +156,7 @@ export default function SystemCheck() {
                 <button
                   type="button"
                   onClick={() => goStep(2)}
-                  className="box-border inline-flex bg-(--primary) items-center gap-2.5 font-bold text-[13px] tracking-[0.08em] uppercase cursor-pointer text-white transition-[background-color,transform] duration-250 m-0 px-6.5 py-3.75 border-0 hover:bg-(--violet) hover:-translate-y-px"
+                  className="box-border inline-flex bg-(--primary) items-center gap-2.5 font-bold text-[13px] tracking-[0.08em] uppercase cursor-pointer text-white transition-[background-color,transform] duration-250 m-0 px-6.5 py-3.25 border-0 hover:bg-(--violet) hover:-translate-y-px"
                 >
                   Weiter
                   <svg
@@ -189,27 +184,23 @@ export default function SystemCheck() {
 
               <div className="text-(--ink) leading-normal box-border grid grid-cols-[1fr_1fr] gap-4.5 mb-4.5 m-0 p-0">
                 <div>
-                  <label
-                    className={`${mono} leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0`}
-                  >
+                  <label className="font-mono leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0">
                     Ansprechpartner Name *
                   </label>
                   <input
                     name="name"
                     required
                     placeholder="z.B. Martin Huber"
-                    className={inputBase}
+                    className="box-border w-full bg-white text-[15px] border border-(--divider) text-(--ink) transition-[border-color,box-shadow] duration-200 m-0 px-3.5 py-3 rounded-[5px] border-solid focus:outline-none focus:border-(--violet) focus:shadow-[0_0_0_3px_rgba(168,85,247,.15)]"
                   />
                 </div>
                 <div className="mb-3.5">
-                  <label
-                    className={`${mono} leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0`}
-                  >
+                  <label className="font-mono leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0">
                     Mitarbeiteranzahl
                   </label>
                   <select
                     name="mitarbeiter"
-                    className={inputBase}
+                    className="box-border w-full bg-white text-[15px] border border-(--divider) text-(--ink) transition-[border-color,box-shadow] duration-200 m-0 px-3.5 py-3 rounded-[5px] border-solid focus:outline-none focus:border-(--violet) focus:shadow-[0_0_0_3px_rgba(168,85,247,.15)]"
                     defaultValue="6 - 15 Mitarbeiter"
                   >
                     <option>1 - 5 Mitarbeiter</option>
@@ -222,22 +213,18 @@ export default function SystemCheck() {
 
               <div className="grid grid-cols-[1fr_1fr] gap-4.5 mb-4.5">
                 <div className="mb-3.5">
-                  <label
-                    className={`${mono} leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0`}
-                  >
+                  <label className="font-mono leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0">
                     Telefonnummer (für Rückfragen) *
                   </label>
                   <input
                     name="telefon"
                     required
                     placeholder="+49 (0) 170 1234567"
-                    className={inputBase}
+                    className="box-border w-full bg-white text-[15px] border border-(--divider) text-(--ink) transition-[border-color,box-shadow] duration-200 m-0 px-3.5 py-3 rounded-[5px] border-solid focus:outline-none focus:border-(--violet) focus:shadow-[0_0_0_3px_rgba(168,85,247,.15)]"
                   />
                 </div>
                 <div>
-                  <label
-                    className={`${mono} leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0`}
-                  >
+                  <label className="font-mono leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0">
                     E-Mail-Adresse *
                   </label>
                   <input
@@ -245,28 +232,24 @@ export default function SystemCheck() {
                     name="email"
                     required
                     placeholder="huber@beispiel.de"
-                    className={inputBase}
+                    className="box-border w-full bg-white text-[15px] border border-(--divider) text-(--ink) transition-[border-color,box-shadow] duration-200 m-0 px-3.5 py-3 rounded-[5px] border-solid focus:outline-none focus:border-(--violet) focus:shadow-[0_0_0_3px_rgba(168,85,247,.15)]"
                   />
                 </div>
               </div>
 
               <div className="mb-4.5">
-                <label
-                  className={`${mono} leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0`}
-                >
+                <label className="font-mono leading-normal box-border text-xs font-semibold tracking-[0.04em] text-(--ink) uppercase block mb-2 m-0 p-0">
                   Bestehende Systeme (z.B. Lexware, Kuller, Excel, etc.) –
                   optional
                 </label>
                 <textarea
                   name="systeme"
                   placeholder="Welche Software ist aktuell im Einsatz?"
-                  className={`${inputBase} min-h-20 resize-y`}
+                  className="box-border w-full bg-white text-[15px] border border-(--divider) text-(--ink) transition-[border-color,box-shadow] duration-200 m-0 px-3.5 py-3 rounded-[5px] border-solid focus:outline-none focus:border-(--violet) focus:shadow-[0_0_0_3px_rgba(168,85,247,.15)] min-h-20 resize-y"
                 />
               </div>
 
-              <div
-                className={`${mono} flex gap-3 bg-[rgba(46,26,71,.04)] border border-(--divider) rounded-[5px] p-4 mt-1.5 mb-6 text-[12.5px] leading-[1.6] text-(--muted)`}
-              >
+              <div className="font-mono flex gap-3 bg-[rgba(46,26,71,.04)] border border-(--divider) rounded-[5px] p-4 mt-1.5 mb-6 text-[12.5px] leading-[1.6] text-(--muted)">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -294,7 +277,7 @@ export default function SystemCheck() {
                 </button>
                 <button
                   type="submit"
-                  className="box-border inline-flex bg-(--primary) items-center gap-2.5 font-bold text-[13px] tracking-[0.08em] uppercase cursor-pointer text-white transition-[background-color,transform] duration-250 m-0 px-6.5 py-3.75 border-0 hover:bg-(--violet) hover:-translate-y-px"
+                  className="box-border inline-flex bg-(--primary) items-center gap-2.5 font-bold text-[13px] tracking-[0.08em] uppercase cursor-pointer text-white transition-[background-color,transform] duration-250 m-0 px-6.5 py-3.25 border-0 hover:bg-(--violet) hover:-translate-y-px"
                 >
                   Anfrage absenden
                   <svg
@@ -342,25 +325,17 @@ export default function SystemCheck() {
                 .
               </p>
               <div className="border border-(--divider) rounded-[5px] bg-white px-5.5 py-5 text-left max-w-115 mx-auto mb-6.5">
-                <div
-                  className={`${mono} text-xs font-semibold tracking-widest uppercase text-(--ink) border-b border-(--divider) pb-2.5 mb-3.5`}
-                >
+                <div className="font-mono text-xs font-semibold tracking-widest uppercase text-(--ink) border-b border-(--divider) pb-2.5 mb-3.5">
                   Nächste Schritte:
                 </div>
                 <ol className="list-none">
-                  <li
-                    className={`${mono} text-[13px] leading-[1.55] text-(--ink) flex gap-2.5 mb-3 before:content-['1.'] before:font-bold before:text-(--primary)`}
-                  >
+                  <li className="font-mono text-[13px] leading-[1.55] text-(--ink) flex gap-2.5 mb-3 before:content-['1.'] before:font-bold before:text-(--primary)">
                     Wir melden uns telefonisch innerhalb von 24 Stunden bei dir.
                   </li>
-                  <li
-                    className={`${mono} text-[13px] leading-[1.55] text-(--ink) flex gap-2.5 mb-3 before:content-['2.'] before:font-bold before:text-(--primary)`}
-                  >
+                  <li className="font-mono text-[13px] leading-[1.55] text-(--ink) flex gap-2.5 mb-3 before:content-['2.'] before:font-bold before:text-(--primary)">
                     Kurze Besprechung deiner Schnittstellen und Insellösungen.
                   </li>
-                  <li
-                    className={`${mono} text-[13px] leading-[1.55] text-(--ink) flex gap-2.5 mb-3 before:content-['3.'] before:font-bold before:text-(--primary)`}
-                  >
+                  <li className="font-mono text-[13px] leading-[1.55] text-(--ink) flex gap-2.5 mb-3 before:content-['3.'] before:font-bold before:text-(--primary)">
                     Konzeptvorschlag für eine maßgeschneiderte Lösung.
                   </li>
                 </ol>
