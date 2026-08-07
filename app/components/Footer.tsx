@@ -5,10 +5,6 @@ import { useModal } from "../context/ModalContext";
 export default function Footer() {
   const { openModal } = useModal();
 
-  const handleModalClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    openModal();
-  };
   return (
     <footer className="bg-(--primary) pt-18.5 pb-8.5 text-white/70 block isolate box-border">
       <div className="mx-auto max-w-160 md:max-w-310 px-5 md:px-10">
